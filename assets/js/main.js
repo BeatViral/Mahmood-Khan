@@ -8,15 +8,17 @@ const tracks = [
 ];
 const isUrl = value => /^https?:\/\//i.test(value);
 const list = document.querySelector('#track-list');
-list.innerHTML = tracks.map(([number, title, url]) => `<li class="track"><span class="track-no">${number}</span><span class="track-title">${title}</span>${isUrl(url) ? `<a href="${url}" target="_blank" rel="noopener" aria-label="Watch ${title} on YouTube">Watch <b>↗</b></a>` : '<span class="track-pending" aria-label="Official video link coming soon">Coming soon</span>'}</li>`).join('');
+if (list) list.innerHTML = tracks.map(([number, title, url]) => `<li class="track"><span class="track-no">${number}</span><span class="track-title">${title}</span>${isUrl(url) ? `<a href="${url}" target="_blank" rel="noopener" aria-label="Watch ${title} on YouTube">Watch <b>↗</b></a>` : '<span class="track-pending" aria-label="Official video link coming soon">Coming soon</span>'}</li>`).join('');
 
 /* Replace this value with an https://www.youtube.com/embed/... URL when available. */
 const featuredEmbedUrl = 'POWER_LINES_FEATURED_YOUTUBE_EMBED_URL';
-if (isUrl(featuredEmbedUrl)) document.querySelector('#featured-video').innerHTML = `<iframe title="Power Lines official video" loading="lazy" src="${featuredEmbedUrl}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+if (isUrl(featuredEmbedUrl) && document.querySelector('#featured-video')) document.querySelector('#featured-video').innerHTML = `<iframe title="Power Lines official video" loading="lazy" src="${featuredEmbedUrl}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
 
 const menu = document.querySelector('.menu-toggle'), nav = document.querySelector('#site-nav');
-menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') === 'true'; menu.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('open', !open); });
-nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.setAttribute('aria-expanded','false'); nav.classList.remove('open'); }));
+if (menu && nav) {
+  menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') === 'true'; menu.setAttribute('aria-expanded', String(!open)); nav.classList.toggle('open', !open); });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.setAttribute('aria-expanded','false'); nav.classList.remove('open'); }));
+}
 const reveals = document.querySelectorAll('.reveal');
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
