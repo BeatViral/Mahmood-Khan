@@ -6,3 +6,4 @@
 @media(max-width:760px){.videos-grid,.wiki-grid{grid-template-columns:1fr;gap:1rem}.wiki-grid{margin-top:3rem}.wiki-facts{max-width:340px}.wiki-copy{font-size:15px}}
 body.home main > section:not(.hero){display:none}
 .subpage .site-header{position:relative;background:#09131b}.subpage .section{min-height:calc(100vh - 82px)}.subpage footer{margin-top:0}
+@media(min-width:761px){.home .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,96px);padding:110px clamp(40px,7vw,130px) 52px;min-height:100svh}.home .hero-copy{margin:0;padding:0}.home .hero-art{position:relative;right:auto;bottom:auto;width:100%;height:auto;aspect-ratio:16/9;align-self:center}.home .hero-art img{width:100%;height:100%;object-fit:contain;object-position:center}.home .hero-art:before{background:linear-gradient(90deg,rgba(9,19,27,.28),transparent 18%),linear-gradient(0deg,rgba(9,19,27,.28),transparent 14%)}.home .scroll-cue{left:clamp(40px,7vw,130px)}}
