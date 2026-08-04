@@ -1,12 +1,19 @@
-/* Replace only the URL values below when official YouTube links are available. */
 const tracks = [
-  ['01', 'Power Lines', 'POWER_LINES_YOUTUBE_URL'], ['02', 'Changes', 'CHANGES_YOUTUBE_URL'],
-  ['03', 'New Tide', 'NEW_TIDE_YOUTUBE_URL'], ['04', 'Mei Raasta', 'MEI_RAASTA_YOUTUBE_URL'],
-  ['05', 'One Line Down', 'ONE_LINE_DOWN_YOUTUBE_URL'], ['06', 'Pretty Eyes', 'PRETTY_EYES_YOUTUBE_URL'],
-  ['07', 'Two Islands', 'TWO_ISLANDS_YOUTUBE_URL'], ['08', 'True Love', 'TRUE_LOVE_YOUTUBE_URL'],
-  ['09', 'The Great Leaving', 'THE_GREAT_LEAVING_YOUTUBE_URL'], ['10', 'Sweet Freedom', 'SWEET_FREEDOM_YOUTUBE_URL']
+  ['01', 'Power Lines', 'https://youtu.be/fwFyvgtadfU'],
+  ['02', 'New Tide', 'https://youtu.be/WCYivpjdPzU'],
+  ['03', 'True Love', 'https://youtu.be/-3sQzkLlhMA'],
+  ['04', 'The Great Leaving', 'https://youtu.be/b9w1wvF0dro'],
+  ['05', 'Sweet Freedom', 'https://youtu.be/MUrI4yWkPnU'],
+  ['06', 'Mei Raasta', 'https://youtu.be/iTzt4K_g5rE'],
+  ['07', 'Changes', 'https://youtu.be/AJiwSt9qvU0'],
+  ['08', 'Two Islands', 'https://youtu.be/sZmpoi4tAEE'],
+  ['09', 'Pretty Eyes', 'https://youtu.be/cP1ZXHKpURU'],
+  ['10', 'One Line Down', 'https://youtu.be/m35Nq0II3XI']
 ];
 const isUrl = value => /^https?:\/\//i.test(value);
+const albumPlaylistUrl = 'https://www.youtube.com/playlist?list=PLJqf9TxS0A1M';
+const tracksHead = document.querySelector('.tracks-head');
+if (tracksHead) tracksHead.insertAdjacentHTML('beforeend', `<p><a class="button button-outline" href="${albumPlaylistUrl}" target="_blank" rel="noopener">Play the complete album ↗</a></p>`);
 const list = document.querySelector('#track-list');
 if (list) list.innerHTML = tracks.map(([number, title, url]) => `<li class="track"><span class="track-no">${number}</span><span class="track-title">${title}</span>${isUrl(url) ? `<a href="${url}" target="_blank" rel="noopener" aria-label="Watch ${title} on YouTube">Watch <b>↗</b></a>` : '<span class="track-pending" aria-label="Official video link coming soon">Coming soon</span>'}</li>`).join('');
 
