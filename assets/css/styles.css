@@ -20,3 +20,4 @@ body.press-page .story{background:#0a151d!important;color:#f4e6ca}body.press-pag
 
 /* Dedicated 2026 album page */
 .album-page .site-header{position:relative;background:var(--ink)}.album-opening{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:5vw;padding:80px clamp(24px,8vw,120px);background:linear-gradient(130deg,#10212d,#302016)}.album-opening img{display:block;width:100%;height:auto}.album-opening .display{margin:24px 0}.album-sections{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:30px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold)}@media(max-width:760px){.album-opening{grid-template-columns:1fr;padding-top:48px;gap:32px}}
+.performance-context{max-width:850px;margin:0 auto 3rem}
