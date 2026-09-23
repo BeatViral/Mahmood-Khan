@@ -24,3 +24,6 @@ body.press-page .story{background:#0a151d!important;color:#f4e6ca}body.press-pag
 
 /* Orchestras of the World project description */
 .project-overview{background:var(--ink);padding-top:clamp(48px,7vw,100px);padding-bottom:clamp(64px,8vw,120px)}.project-overview-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,90px)}.project-overview .prose{max-width:none}.project-overview h2{font:400 clamp(2rem,3.3vw,3.6rem)/1.1 var(--serif);color:var(--gold);margin:0 0 1.3rem}.project-vision{grid-column:1/-1;border-top:1px solid rgba(227,176,109,.35);padding-top:clamp(32px,5vw,65px)}.project-vision p{max-width:900px}.project-status{color:var(--gold);font-weight:700}.project-overview .prose p:last-child{margin-bottom:0}@media(max-width:760px){.project-overview-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Career narrative leading back to the orchestral project */
+.project-overview .journey-bridge{max-width:960px;margin:0 auto}.journey-intro{padding:70px 24px;text-align:center;background:var(--ink)}.journey-intro h2{font:400 clamp(2rem,4vw,4rem)/1.15 var(--serif);color:var(--gold);margin:18px 0 0}.journey-return{margin-top:3rem;margin-bottom:0}
