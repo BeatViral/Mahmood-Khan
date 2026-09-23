@@ -27,3 +27,5 @@ body.press-page .story{background:#0a151d!important;color:#f4e6ca}body.press-pag
 
 /* Career narrative leading back to the orchestral project */
 .project-overview .journey-bridge{max-width:960px;margin:0 auto}.journey-intro{padding:70px 24px;text-align:center;background:var(--ink)}.journey-intro h2{font:400 clamp(2rem,4vw,4rem)/1.15 var(--serif);color:var(--gold);margin:18px 0 0}.journey-return{margin-top:3rem;margin-bottom:0}
+
+.project-vision h3{font:400 clamp(1.5rem,2.4vw,2.2rem)/1.2 var(--serif);color:var(--gold);margin:2rem 0 1rem}.footer-contact h2{font:400 1.6rem/1.2 var(--serif);color:var(--gold);margin:0 0 1rem}.footer-contact p{font-size:13px;max-width:380px}.footer-contact>a{font-size:14px;color:var(--cream);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
