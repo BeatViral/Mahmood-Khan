@@ -32,3 +32,5 @@ body.press-page .story{background:#0a151d!important;color:#f4e6ca}body.press-pag
 
 /* The orchestral experiment */
 .project-experiment{background:linear-gradient(135deg,#132630,#09131b);padding-top:clamp(56px,7vw,100px);padding-bottom:clamp(56px,7vw,100px)}.experiment-copy{max-width:960px;margin:0 auto}.experiment-copy h2{font:400 clamp(2.4rem,5vw,5rem)/1.1 var(--serif);color:var(--gold);margin:0 0 2rem}.experiment-question{font-size:clamp(1.6rem,3vw,2.7rem);line-height:1.25}.experiment-thesis{font:inherit;line-height:1.65;padding:24px;background:rgba(227,176,109,.06)}.experiment-conclusion{color:var(--gold);margin-bottom:0!important}
+
+@media(min-width:761px) and (max-width:1200px){.site-header{gap:20px}#site-nav{gap:12px;flex-wrap:wrap;justify-content:flex-end;max-width:74%}}
