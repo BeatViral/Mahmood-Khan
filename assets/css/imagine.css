@@ -16,3 +16,5 @@
 .recording-explainer{margin-top:32px;padding:26px 30px;border-left:2px solid var(--gold);background:var(--panel);max-width:850px}.recording-explainer h3{font-size:23px;font-weight:500;margin-bottom:16px}.recording-explainer p{font-size:14px;color:#c5c4bb}.recording-explainer strong{color:var(--white);font-weight:600}
 @media(max-width:600px){.performance-slot{aspect-ratio:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.button:hover{transform:none}}
+
+.orchestra-bio{margin-top:28px;padding:28px 0 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.orchestra-bio p{font-size:15px;line-height:1.85;color:var(--muted);margin:0 0 20px}.orchestra-bio .orchestra-bio-lead{font-size:23px;line-height:1.35;color:var(--gold);letter-spacing:-.02em;margin-bottom:24px}.orchestra-bio .text-link{display:inline-flex;line-height:1.5;margin-top:5px}@media(max-width:600px){.orchestra-bio{padding-block:24px}.orchestra-bio p{font-size:14px}.orchestra-bio .orchestra-bio-lead{font-size:22px}}
