@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const measurementId = 'G-W9ML9X276E';
-  const storageKey = 'imagine-analytics-consent-v1';
+  const storageKey = 'site-analytics-consent-v2';
   const lifetime = 180 * 24 * 60 * 60 * 1000;
   const panel = document.getElementById('analytics-choice');
   const settings = document.getElementById('analytics-settings');

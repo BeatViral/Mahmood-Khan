@@ -1,0 +1,12 @@
+.analytics-choice[hidden],.analytics-settings[hidden]{display:none!important}
+.analytics-choice{box-sizing:border-box;position:fixed;z-index:1000;bottom:18px;left:5%;right:5%;max-width:1000px;margin:auto;padding:22px;background:#111110;border:1px solid #84723e;box-shadow:0 8px 35px #0009;display:flex;align-items:center;gap:24px;max-height:85svh;overflow:auto;text-align:left;font-family:Manrope,Arial,sans-serif;color:#d0ccbf}
+.analytics-choice h2{font:600 18px/1.35 Manrope,Arial,sans-serif;color:#f4ca59;margin:0 0 9px;letter-spacing:normal;text-transform:none}
+.analytics-choice p{font:400 12px/1.7 Manrope,Arial,sans-serif;color:#d0ccbf;max-width:650px;margin:0;letter-spacing:normal}
+.analytics-choice .privacy-link{font:inherit;text-transform:none;letter-spacing:normal;text-decoration:underline;text-underline-offset:3px;color:#f4ca59}
+.analytics-actions{display:flex;flex-direction:column;gap:9px;flex-shrink:0}
+.analytics-actions button{font:600 12px/1.4 Manrope,Arial,sans-serif;padding:12px 17px;background:transparent;border:1px solid #f4ca59;border-radius:0;color:#f4ca59;cursor:pointer}
+.analytics-actions button:hover{background:#f4ca5918}
+.analytics-actions button:focus-visible,.analytics-settings:focus-visible{outline:2px solid #f4ca59;outline-offset:4px}
+.analytics-settings{font:400 11px/1.5 Manrope,Arial,sans-serif;color:#bbb7ac;background:none;border:0;padding:6px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.site-privacy-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font:400 11px/1.5 Manrope,Arial,sans-serif}.site-privacy-links a{color:#bbb7ac;text-transform:none;letter-spacing:normal}
+@media(max-width:600px){.analytics-choice{padding:18px;bottom:12px;display:block}.analytics-actions{flex-direction:row;flex-wrap:wrap;margin-top:15px}.analytics-actions button{flex:1}}

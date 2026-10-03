@@ -1,8 +1,8 @@
-# IMAGINE campaign analytics
+# Site-wide analytics and IMAGINE campaign events
 
-GA4 measurement ID: `G-W9ML9X276E`. Installed on `/imagine/`.
+GA4 measurement ID: `G-W9ML9X276E`. Installed on all 13 HTML pages, including the homepage, campaign, privacy and 404 pages. Each page includes the shared analytics script and analytics-consent stylesheet.
 
-Analytics is opt-in. No Google tag is fetched or configured until acceptance (or a remembered acceptance). Accept and Decline have equal visual treatment. The footer’s Analytics choices button reopens the choice. A versioned localStorage preference is remembered for 180 days; unavailable storage falls back to the current visit. Advertising consent stays denied. Withdrawal disables GA, clears its first-party cookies and reloads to unload its runtime. Other open tabs respond to preference changes. Pre-consent clicks are discarded.
+Analytics is opt-in. No Google tag is fetched or configured until acceptance (or a remembered acceptance). Accept and Decline have equal visual treatment. The footer’s Analytics choices button reopens the choice. The site-wide `site-analytics-consent-v2` localStorage preference is remembered for 180 days; the previous campaign-only choice is re-requested to cover the wider scope; unavailable storage falls back to the current visit. Advertising consent stays denied. Withdrawal disables GA, clears its first-party cookies and reloads to unload its runtime. Other open tabs respond to preference changes. Pre-consent clicks are discarded.
 
 After acceptance, the Google tag config sends the page view. GA4 handles session source, medium,
 campaign and referrer attribution; the page does not send a second manual page view.
