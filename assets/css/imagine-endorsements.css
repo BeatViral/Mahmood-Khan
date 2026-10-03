@@ -12,3 +12,5 @@
 @media(prefers-reduced-motion:reduce){.voices-toggle{transition:none}}
 
 .nusrat-quote figcaption{flex-direction:column;align-items:flex-start;gap:5px}.nusrat-quote figcaption>span{font-size:11px}
+
+.david-quote figcaption{flex-direction:column;align-items:flex-start;gap:7px}.david-quote figcaption>span{max-width:780px;line-height:1.7}
