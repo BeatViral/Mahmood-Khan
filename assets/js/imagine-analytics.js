@@ -1,5 +1,84 @@
 (() => {
   'use strict';
+  const measurementId = 'G-W9ML9X276E';
+  const storageKey = 'imagine-analytics-consent-v1';
+  const lifetime = 180 * 24 * 60 * 60 * 1000;
+  const panel = document.getElementById('analytics-choice');
+  const settings = document.getElementById('analytics-settings');
+  const accept = document.getElementById('analytics-accept');
+  const decline = document.getElementById('analytics-decline');
+  let allowed = false;
+  let loaded = false;
+  let fromSettings = false;
+  const denied = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+
+  function savedChoice() {
+    try {
+      const value = JSON.parse(localStorage.getItem(storageKey));
+      return value && ['accepted', 'declined'].includes(value.choice) &&
+        value.time <= Date.now() && Date.now() - value.time < lifetime ? value.choice : null;
+    } catch { return null; }
+  }
+
+  function clearAnalyticsCookies() {
+    const domains = ['', window.location.hostname, '.' + window.location.hostname, 'mahmoodkhan.net', '.mahmoodkhan.net'];
+    for (const cookie of document.cookie.split(';')) {
+      const name = cookie.split('=')[0].trim();
+      if (name !== '_ga' && !name.startsWith('_ga_')) continue;
+      for (const domain of domains) {
+        for (const path of ['/', '/imagine', '/imagine/']) {
+          document.cookie = `${name}=; Max-Age=0; path=${path}${domain ? '; domain=' + domain : ''}; SameSite=Lax`;
+        }
+      }
+    }
+  }
+
+  function startAnalytics() {
+    allowed = true;
+    window['ga-disable-' + measurementId] = false;
+    if (loaded) return;
+    loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('consent', 'default', denied);
+    window.gtag('consent', 'update', {...denied, analytics_storage: 'granted'});
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, {allow_google_signals: false, allow_ad_personalization_signals: false});
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+    document.head.appendChild(script);
+  }
+
+  function stopAnalytics() {
+    allowed = false;
+    window['ga-disable-' + measurementId] = true;
+    if (loaded) window.gtag('consent', 'update', denied);
+    clearAnalyticsCookies();
+    // Unload Google's runtime after withdrawal; the saved decline prevents reloading it.
+    if (loaded) window.location.reload();
+  }
+
+  function choose(choice) {
+    try { localStorage.setItem(storageKey, JSON.stringify({choice, time: Date.now()})); } catch { /* Apply this visit's choice even when storage is unavailable. */ }
+    panel.hidden = true;
+    if (choice === 'accepted') startAnalytics(); else stopAnalytics();
+    if (fromSettings) settings.focus();
+  }
+
+  settings.hidden = false;
+  settings.addEventListener('click', () => { fromSettings = true; panel.hidden = false; accept.focus(); });
+  accept.addEventListener('click', () => choose('accepted'));
+  decline.addEventListener('click', () => choose('declined'));
+  const initial = savedChoice();
+  if (initial === 'accepted') startAnalytics();
+  else { stopAnalytics(); panel.hidden = initial === 'declined'; }
+  window.addEventListener('storage', (event) => {
+    if (event.key !== storageKey && event.key !== null) return;
+    const choice = savedChoice();
+    if (choice === 'accepted') { startAnalytics(); panel.hidden = true; }
+    else { stopAnalytics(); panel.hidden = choice === 'declined'; }
+  });
   const eventNames = {
     lead_partner: 'imagine_lead_partner_click',
     chapter_partner: 'imagine_chapter_partner_click',
@@ -20,7 +99,7 @@
   // Observe clicks without delaying or cancelling the visitor's email action.
   document.addEventListener('click', (event) => {
     const link = event.target.closest?.('a[data-campaign-cta]');
-    if (!link || typeof window.gtag !== 'function') return;
+    if (!allowed || !link || typeof window.gtag !== 'function') return;
     const cta = link.dataset.campaignCta;
     if (!Object.hasOwn(eventNames, cta)) return;
     window.gtag('event', eventNames[cta], {

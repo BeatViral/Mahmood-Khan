@@ -2,7 +2,9 @@
 
 GA4 measurement ID: `G-W9ML9X276E`. Installed on `/imagine/`.
 
-The Google tag config sends the page view. GA4 handles session source, medium,
+Analytics is opt-in. No Google tag is fetched or configured until acceptance (or a remembered acceptance). Accept and Decline have equal visual treatment. The footer’s Analytics choices button reopens the choice. A versioned localStorage preference is remembered for 180 days; unavailable storage falls back to the current visit. Advertising consent stays denied. Withdrawal disables GA, clears its first-party cookies and reloads to unload its runtime. Other open tabs respond to preference changes. Pre-consent clicks are discarded.
+
+After acceptance, the Google tag config sends the page view. GA4 handles session source, medium,
 campaign and referrer attribution; the page does not send a second manual page view.
 
 Each contact route sends one distinct custom event:
