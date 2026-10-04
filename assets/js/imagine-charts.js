@@ -41,14 +41,6 @@
     filterRecords();
   }));
   search.addEventListener('input', filterRecords);
-  function openArchiveFromHash() {
-    if (location.hash === '#chart-archive') archive.open = true;
-    const target = document.getElementById(location.hash.slice(1));
-    if (target) { let parent = target.parentElement; while (parent) { if (parent.tagName === 'DETAILS') parent.open = true; parent = parent.parentElement; } }
-  }
-  document.querySelectorAll('a[href="#chart-archive"]').forEach(link => link.addEventListener('click', () => { archive.open = true; }));
-  window.addEventListener('hashchange', openArchiveFromHash);
-  openArchiveFromHash();
 
   if (typeof dialog.showModal !== 'function') return; // Image links remain usable in older browsers.
   function resetZoom() {

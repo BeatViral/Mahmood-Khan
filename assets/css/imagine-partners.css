@@ -83,3 +83,10 @@
 
 /* Refinement: values lead directly to consequence; philosophy becomes a transition. */
 .values-consequence{border-top:1px solid var(--line);margin-top:38px;padding-top:25px;font-size:clamp(23px,2.8vw,38px);line-height:1.35;letter-spacing:-.035em}.values-consequence span{color:var(--gold)}.human-philosophy{padding-block:42px}.human-philosophy h2{font-size:clamp(22px,2.5vw,34px);margin:0;line-height:1.5}.because-statements .because-emphasis strong{display:block;font-weight:400;margin-top:25px}.because-statements .because-emphasis:has(strong){font-family:inherit;font-size:clamp(19px,2.2vw,29px)}.because-statements .because-emphasis strong{font-family:Georgia,serif;font-size:clamp(28px,3.5vw,47px);line-height:1.35}
+
+/* All evidence stays visible in the scrolling page. */
+.archive-heading{font-size:clamp(25px,3vw,40px);font-weight:500;letter-spacing:-.03em;line-height:1.25;padding:30px 0}
+.chart-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.chart-grid img{height:145px;object-fit:contain}.chart-grid .chart-card-top{padding:13px}.chart-grid .chart-card-top strong{font-size:25px}.chart-grid .chart-card-copy{padding:14px}.chart-grid .chart-card h3{font-size:17px;line-height:1.4}
+.proof-extra{border:0;margin-top:20px}.more-voices .voices-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 30px}.more-voices .voice-card{padding-block:23px}.more-voices .voice-card blockquote,.more-voices .voice-context{font-size:15px;line-height:1.75}
+@media(max-width:1000px){.chart-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.more-voices .voices-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.chart-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.chart-grid img{height:120px}.chart-grid .chart-card-copy,.chart-grid .chart-card-top{padding:10px}.chart-grid .chart-card h3{font-size:14px}.chart-grid .chart-card-top strong{font-size:22px}.more-voices .voices-grid{grid-template-columns:1fr}.proof-extra .section{padding-block:30px}}
