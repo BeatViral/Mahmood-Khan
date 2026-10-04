@@ -80,6 +80,8 @@
     else { stopAnalytics(); panel.hidden = choice === 'declined'; }
   });
   const eventNames = {
+    production_budget: 'imagine_production_budget_click',
+    partner_information: 'imagine_partner_information_click',
     lead_partner: 'imagine_lead_partner_click',
     chapter_partner: 'imagine_chapter_partner_click',
     founding_partner: 'imagine_founding_partner_click',
