@@ -99,17 +99,19 @@
     if (value) attribution[key] = value.slice(0, 100);
   }
 
-  const licensingEvents = new Set(['instrumental_request', 'licensing_enquiry_click']);
+  const licensingEvents = new Set(['instrumental_request', 'licensing_enquiry']);
   document.addEventListener('click', event => {
     const link = event.target.closest?.('a[data-licensing-event]');
     if (!allowed || !link || typeof window.gtag !== 'function' || !licensingEvents.has(link.dataset.licensingEvent)) return;
-    window.gtag('event', link.dataset.licensingEvent, {send_to: measurementId, ...(link.dataset.trackId ? {track_id: link.dataset.trackId} : {}), ...attribution});
+    window.gtag('event', link.dataset.licensingEvent, {send_to: measurementId, ...(link.dataset.trackId ? {track_id: link.dataset.trackId} : {}), ...(link.dataset.trackTitle ? {track_title: link.dataset.trackTitle} : {}), ...attribution});
   });
-  window.addEventListener('licensing-track-play', event => {
+  for (const [customEvent, analyticsEvent] of [['licensing-track-play', 'licensing_track_play'], ['licensing-track-pause', 'licensing_track_pause']]) window.addEventListener(customEvent, event => {
     if (!allowed || typeof window.gtag !== 'function') return;
     const trackId = event.detail?.trackId;
     if (typeof trackId !== 'string' || !/^[a-z0-9-]{1,80}$/.test(trackId)) return;
-    window.gtag('event', 'track_play', {send_to: measurementId, track_id: trackId, ...attribution});
+    const trackTitle = typeof event.detail?.trackTitle === 'string' ? event.detail.trackTitle.slice(0, 120) : '';
+    const mode = event.detail?.mode === 'instrumental' ? 'instrumental' : 'original';
+    window.gtag('event', analyticsEvent, {send_to: measurementId, track_id: trackId, ...(trackTitle ? {track_title: trackTitle} : {}), audio_mode: mode, ...attribution});
   });
 
   // Observe clicks without delaying or cancelling the visitor's email action.

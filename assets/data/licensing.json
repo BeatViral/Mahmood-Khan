@@ -6,99 +6,299 @@
       "title": "Here and Now",
       "version": "Newly mastered version",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/here-and-now.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 170.424,
+      "featured": true
     },
     {
       "id": "now-shes-brave",
-      "title": "Now She’s Brave",
+      "title": "Now She's Brave",
       "version": "Newly mastered version",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/now-shes-brave.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": "/assets/audio/licensing/now-shes-brave-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "durationSeconds": 254.496,
+      "featured": true
     },
     {
       "id": "merry-go-round",
       "title": "Merry Go Round",
       "version": "Walshy mix",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/merry-go-round-walshy-mix.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 191.592,
+      "featured": true
     },
     {
       "id": "one-line-down",
       "title": "One Line Down",
       "version": "",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/one-line-down.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 234.03102,
+      "featured": true
     },
     {
       "id": "brown-eyes",
       "title": "Brown Eyes",
       "version": "",
       "credit": "Miami Dream Team",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/brown-eyes-miami-dream-team.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 188.786939,
+      "featured": true
     },
     {
       "id": "power-lines",
       "title": "Power Lines",
       "version": "",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/power-lines.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": "/assets/audio/licensing/power-lines-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "durationSeconds": 247.152,
+      "featured": true
     },
     {
       "id": "new-tide",
       "title": "New Tide",
       "version": "",
       "credit": "Miami Dream Team",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/new-tide-miami-dream-team.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 190.344,
+      "featured": true
     },
     {
       "id": "jagamarra",
       "title": "Jagamarra",
       "version": "",
       "credit": "Willoughby Symphony Orchestra",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/jagamarra-willoughby-symphony-orchestra.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 259.032,
+      "featured": true
     },
     {
       "id": "like-the-river",
       "title": "Like the River",
       "version": "Live at Sydney Opera House",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/like-the-river-live-sydney-opera-house.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 291.024,
+      "featured": true
     },
     {
       "id": "true-love",
       "title": "True Love",
       "version": "",
       "credit": "",
-      "audioUrl": null,
+      "audioUrl": "/assets/audio/licensing/true-love.mp3",
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": "/assets/audio/licensing/true-love-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "durationSeconds": 205.608,
+      "featured": true
     },
     {
       "id": "two-islands",
       "title": "Two Islands",
       "version": "",
       "credit": "",
+      "audioUrl": "/assets/audio/licensing/two-islands.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": "/assets/audio/licensing/two-islands-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "durationSeconds": 307.536,
+      "featured": true
+    },
+    {
+      "id": "all-we-need-to-know",
+      "title": "All We Need to Know",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/all-we-need-to-know.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 288.024,
+      "featured": false
+    },
+    {
+      "id": "automation",
+      "title": "Automation",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/automation.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 179.4,
+      "featured": false
+    },
+    {
+      "id": "battle-is-uphil",
+      "title": "Battle Is Uphil",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/battle-is-uphil.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 218.256,
+      "featured": false
+    },
+    {
+      "id": "blue-snow",
+      "title": "Blue Snow",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/blue-snow.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 138.024,
+      "featured": false
+    },
+    {
+      "id": "changes",
+      "title": "Changes",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/changes.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": "/assets/audio/licensing/changes-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "durationSeconds": 215.496,
+      "featured": false
+    },
+    {
+      "id": "mei-raasta-urdu",
+      "title": "Mei Raasta",
+      "version": "Urdu",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/mei-raasta-urdu.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 251.136,
+      "featured": false
+    },
+    {
+      "id": "one-line-down-sofa",
+      "title": "One Line Down",
+      "version": "Sofa version",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/one-line-down-sofa.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 252.768,
+      "featured": false
+    },
+    {
+      "id": "pretty-eyes",
+      "title": "Pretty Eyes",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/pretty-eyes.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": "/assets/audio/licensing/pretty-eyes-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "durationSeconds": 267.216,
+      "featured": false
+    },
+    {
+      "id": "rarity",
+      "title": "Rarity",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/rarity.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 177.312,
+      "featured": false
+    },
+    {
+      "id": "runaway",
+      "title": "Runaway",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/runaway.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 222.040816,
+      "featured": false
+    },
+    {
+      "id": "sweet-freedom",
+      "title": "Sweet Freedom",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/sweet-freedom.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 246.024,
+      "featured": false
+    },
+    {
+      "id": "sydney-willoughby-symphony-orchestra",
+      "title": "Sydney",
+      "version": "Willoughby Symphony Orchestra",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/sydney-willoughby-symphony-orchestra.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 186.044082,
+      "featured": false
+    },
+    {
+      "id": "the-great-leaving",
+      "title": "The Great Leaving",
+      "version": "",
+      "credit": "",
+      "audioUrl": "/assets/audio/licensing/the-great-leaving.mp3",
+      "instrumentalAvailable": true,
+      "instrumentalUrl": null,
+      "rights": "ONE-STOP",
+      "durationSeconds": 215.4,
+      "featured": false
+    },
+    {
+      "id": "go-on-willoughby-symphony-orchestra",
+      "title": "Go On",
+      "version": "Willoughby Symphony Orchestra",
+      "credit": "",
       "audioUrl": null,
       "instrumentalAvailable": true,
-      "rights": "ONE-STOP"
+      "instrumentalUrl": "/assets/audio/licensing/go-on-willoughby-symphony-orchestra-instrumental.mp3",
+      "rights": "ONE-STOP",
+      "featured": false
     }
   ]
 }
