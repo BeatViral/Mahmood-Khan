@@ -28,7 +28,7 @@
     {
       "id": "merry-go-round",
       "title": "Merry Go Round",
-      "version": "Walshy mix",
+      "version": "",
       "credit": "",
       "audioUrl": "/assets/audio/licensing/merry-go-round-walshy-mix.mp3",
       "instrumentalAvailable": true,
@@ -203,18 +203,6 @@
       "instrumentalUrl": null,
       "rights": "ONE-STOP",
       "durationSeconds": 251.136,
-      "featured": false
-    },
-    {
-      "id": "one-line-down-sofa",
-      "title": "One Line Down",
-      "version": "Sofa version",
-      "credit": "",
-      "audioUrl": "/assets/audio/licensing/one-line-down-sofa.mp3",
-      "instrumentalAvailable": true,
-      "instrumentalUrl": null,
-      "rights": "ONE-STOP",
-      "durationSeconds": 252.768,
       "featured": false
     },
     {
