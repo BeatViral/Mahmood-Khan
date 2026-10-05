@@ -105,13 +105,14 @@
     if (!allowed || !link || typeof window.gtag !== 'function' || !licensingEvents.has(link.dataset.licensingEvent)) return;
     window.gtag('event', link.dataset.licensingEvent, {send_to: measurementId, ...(link.dataset.trackId ? {track_id: link.dataset.trackId} : {}), ...(link.dataset.trackTitle ? {track_title: link.dataset.trackTitle} : {}), ...attribution});
   });
-  for (const [customEvent, analyticsEvent] of [['licensing-track-play', 'licensing_track_play'], ['licensing-track-pause', 'licensing_track_pause']]) window.addEventListener(customEvent, event => {
+  for (const [customEvent, analyticsEvent] of [['licensing-track-play', 'licensing_track_play'], ['licensing-track-pause', 'licensing_track_pause'], ['licensing-track-share', 'licensing_track_share']]) window.addEventListener(customEvent, event => {
     if (!allowed || typeof window.gtag !== 'function') return;
     const trackId = event.detail?.trackId;
     if (typeof trackId !== 'string' || !/^[a-z0-9-]{1,80}$/.test(trackId)) return;
     const trackTitle = typeof event.detail?.trackTitle === 'string' ? event.detail.trackTitle.slice(0, 120) : '';
-    const mode = event.detail?.mode === 'instrumental' ? 'instrumental' : 'original';
-    window.gtag('event', analyticsEvent, {send_to: measurementId, track_id: trackId, ...(trackTitle ? {track_title: trackTitle} : {}), audio_mode: mode, ...attribution});
+    const params = {send_to: measurementId, track_id: trackId, ...(trackTitle ? {track_title: trackTitle} : {}), ...attribution};
+    if (customEvent !== 'licensing-track-share') params.audio_mode = event.detail?.mode === 'instrumental' ? 'instrumental' : 'original';
+    window.gtag('event', analyticsEvent, params);
   });
 
   // Observe clicks without delaying or cancelling the visitor's email action.

@@ -38,6 +38,38 @@
   for (const track of catalogue.tracks) {
     const card = cards.get(track.id);
     if (!card) continue;
+    const shareButton = document.createElement('button');
+    shareButton.type = 'button';
+    shareButton.className = 'licensing-share';
+    shareButton.textContent = 'Share song';
+    shareButton.setAttribute('aria-label', `Share ${track.title}`);
+    card.querySelector('.licensing-track-enquiry')?.before(shareButton);
+    shareButton.addEventListener('click', async () => {
+      const trackLabel = `${track.title}${track.version ? ` — ${track.version}` : ''}`;
+      const shareUrl = new URL(`/licensing/share/${track.id}/`, location.origin).href;
+      const shareData = {
+        title: `${trackLabel} — Mahmood Khan`,
+        text: `Listen to ${trackLabel} by Mahmood Khan.`,
+        url: shareUrl
+      };
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+          emit('licensing-track-share', track);
+          return;
+        } catch (error) {
+          if (error?.name === 'AbortError') return;
+        }
+      }
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        shareButton.textContent = 'Link copied';
+        emit('licensing-track-share', track);
+        window.setTimeout(() => { shareButton.textContent = 'Share song'; }, 2200);
+      } catch {
+        window.prompt('Copy this song link to share it:', shareUrl);
+      }
+    });
     const player = card.querySelector('.licensing-player');
     const seek = card.querySelector('.licensing-seek');
     const time = card.querySelector('.licensing-time');
