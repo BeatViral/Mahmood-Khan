@@ -12,7 +12,7 @@
   document.body.append(audio);
   let active = null;
 
-  const emit = (name, track, mode) => window.dispatchEvent(new CustomEvent(name, {detail: {trackId: track.id, trackTitle: track.title, mode}}));
+  const emit = (name, track, mode, source) => window.dispatchEvent(new CustomEvent(name, {detail: {trackId: track.id, trackTitle: track.title, mode, source}}));
   const format = seconds => {
     if (!Number.isFinite(seconds) || seconds < 0) return '--:--';
     const value = Math.floor(seconds);
@@ -34,6 +34,7 @@
     setPlayState(active.card, false);
     active = null;
   };
+  window.addEventListener('licensing-playlist-start', () => { if (active) stop(); });
 
   for (const track of catalogue.tracks) {
     const card = cards.get(track.id);
@@ -104,6 +105,7 @@
       active = {card, mode};
       setPlayState(card, true);
       status.textContent = mode === 'instrumental' ? 'Instrumental preview' : 'Original preview';
+      window.dispatchEvent(new Event('licensing-single-track-start'));
       try { await audio.play(); }
       catch { setPlayState(card, false); status.textContent = 'Preview could not be played. Please try again.'; active = null; }
     });

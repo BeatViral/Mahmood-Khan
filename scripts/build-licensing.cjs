@@ -26,5 +26,6 @@ let html=fs.readFileSync(file,'utf8');
 html=html.replace(/<!-- LICENSING TRACKS START -->[^]*?<!-- LICENSING TRACKS END -->/,'<!-- LICENSING TRACKS START -->\n'+cards(featured,0)+'\n<!-- LICENSING TRACKS END -->');
 html=html.replace(/<!-- LICENSING MORE TRACKS START -->[^]*?<!-- LICENSING MORE TRACKS END -->/,'<!-- LICENSING MORE TRACKS START -->\n'+cards(more,featured.length)+'\n<!-- LICENSING MORE TRACKS END -->');
 html=html.replace(/<!-- LICENSING DATA START -->[^]*?<!-- LICENSING DATA END -->/,'<!-- LICENSING DATA START -->\n<script type="application/json" id="licensing-data">'+JSON.stringify(catalogue).replace(/</g,'\\u003c')+'</script>\n<!-- LICENSING DATA END -->');
+html=html.replace(/THE COMPLETE SELECTION \/ \d+ RECORDINGS/,`THE COMPLETE SELECTION / ${catalogue.tracks.length} RECORDINGS`);
 fs.writeFileSync(file,html);
 console.log(`Built ${featured.length} featured and ${more.length} additional licensing selections, including ${catalogue.tracks.filter(t => t.instrumentalUrl).length} supplied instrumental previews. Instrumentals are available for every song.`);
