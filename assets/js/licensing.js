@@ -49,7 +49,7 @@
       const shareUrl = new URL(`/licensing/share/${track.id}/`, location.origin).href;
       const shareData = {
         title: `${trackLabel} — Mahmood Khan`,
-        text: `Listen to ${trackLabel} by Mahmood Khan.`,
+        text: `Listen to ${trackLabel} by Mahmood Khan${track.credit ? `, featuring ${track.credit}` : ''}.`,
         url: shareUrl
       };
       if (navigator.share) {
