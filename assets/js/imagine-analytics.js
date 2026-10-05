@@ -44,6 +44,7 @@
     window.gtag('consent', 'update', {...denied, analytics_storage: 'granted'});
     window.gtag('js', new Date());
     window.gtag('config', measurementId, {allow_google_signals: false, allow_ad_personalization_signals: false});
+    if (/^\/licensing\/?$/.test(location.pathname)) window.gtag('event', 'licensing_page_view', {send_to: measurementId});
     const script = document.createElement('script');
     script.async = true;
     script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
@@ -97,6 +98,19 @@
     const value = params.get(key);
     if (value) attribution[key] = value.slice(0, 100);
   }
+
+  const licensingEvents = new Set(['instrumental_request', 'licensing_enquiry_click']);
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('a[data-licensing-event]');
+    if (!allowed || !link || typeof window.gtag !== 'function' || !licensingEvents.has(link.dataset.licensingEvent)) return;
+    window.gtag('event', link.dataset.licensingEvent, {send_to: measurementId, ...(link.dataset.trackId ? {track_id: link.dataset.trackId} : {}), ...attribution});
+  });
+  window.addEventListener('licensing-track-play', event => {
+    if (!allowed || typeof window.gtag !== 'function') return;
+    const trackId = event.detail?.trackId;
+    if (typeof trackId !== 'string' || !/^[a-z0-9-]{1,80}$/.test(trackId)) return;
+    window.gtag('event', 'track_play', {send_to: measurementId, track_id: trackId, ...attribution});
+  });
 
   // Observe clicks without delaying or cancelling the visitor's email action.
   document.addEventListener('click', (event) => {

@@ -1,0 +1,13 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+const catalogue = JSON.parse(fs.readFileSync(path.join(root, 'assets/data/licensing.json'), 'utf8'));
+const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+if (!catalogue.instrumentalsAvailableForAll || catalogue.tracks.some(t => !t.instrumentalAvailable)) throw new Error('All songs have instrumentals, as confirmed by the rights holder.');
+const cards = catalogue.tracks.map((track, i) => `<article class="licensing-track" data-track-id="${escape(track.id)}"><div class="track-top"><span>${String(i+1).padStart(2,'0')}</span><span>${escape(track.rights)}</span></div><h3>${escape(track.title)}</h3><p class="licensing-track-credit">${escape([track.version,track.credit].filter(Boolean).join(' · '))}</p><div class="licensing-audio"></div><a class="licensing-track-enquiry" data-licensing-event="licensing_enquiry_click" data-track-id="${escape(track.id)}" href="mailto:mahmoodkhanteam@gmail.com?subject=${encodeURIComponent('Licensing enquiry — '+track.title)}">Enquire about this recording <span aria-hidden="true">↗</span></a></article>`).join('\n');
+const file=path.join(root,'licensing/index.html');
+let html=fs.readFileSync(file,'utf8');
+html=html.replace(/<!-- LICENSING TRACKS START -->[^]*?<!-- LICENSING TRACKS END -->/,'<!-- LICENSING TRACKS START -->\n'+cards+'\n<!-- LICENSING TRACKS END -->');
+html=html.replace(/<!-- LICENSING DATA START -->[^]*?<!-- LICENSING DATA END -->/,'<!-- LICENSING DATA START -->\n<script type="application/json" id="licensing-data">'+JSON.stringify(catalogue).replace(/</g,'\\u003c')+'</script>\n<!-- LICENSING DATA END -->');
+fs.writeFileSync(file,html);
+console.log(`Built ${catalogue.tracks.length} licensing tracks. Instrumentals available for every song.`);

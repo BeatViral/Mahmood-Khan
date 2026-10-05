@@ -1,0 +1,104 @@
+{
+  "instrumentalsAvailableForAll": true,
+  "tracks": [
+    {
+      "id": "here-and-now",
+      "title": "Here and Now",
+      "version": "Newly mastered version",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "now-shes-brave",
+      "title": "Now She’s Brave",
+      "version": "Newly mastered version",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "merry-go-round",
+      "title": "Merry Go Round",
+      "version": "Walshy mix",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "one-line-down",
+      "title": "One Line Down",
+      "version": "",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "brown-eyes",
+      "title": "Brown Eyes",
+      "version": "",
+      "credit": "Miami Dream Team",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "power-lines",
+      "title": "Power Lines",
+      "version": "",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "new-tide",
+      "title": "New Tide",
+      "version": "",
+      "credit": "Miami Dream Team",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "jagamarra",
+      "title": "Jagamarra",
+      "version": "",
+      "credit": "Willoughby Symphony Orchestra",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "like-the-river",
+      "title": "Like the River",
+      "version": "Live at Sydney Opera House",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "true-love",
+      "title": "True Love",
+      "version": "",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    },
+    {
+      "id": "two-islands",
+      "title": "Two Islands",
+      "version": "",
+      "credit": "",
+      "audioUrl": null,
+      "instrumentalAvailable": true,
+      "rights": "ONE-STOP"
+    }
+  ]
+}
