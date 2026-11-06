@@ -1,0 +1,35 @@
+{
+  "programTitle": "WORLD POP",
+  "tagline": "The songs. The stories. The cultures they created.",
+  "presenterCredit": "Hosted by Mahmood Khan",
+  "poster": "/assets/WORLD_POP_APPROVED_POSTER.jpg",
+  "launchDate": "2026-11-14",
+  "inauguralBroadcaster": {
+    "name": "Opal FM",
+    "frequency": "89.7 FM",
+    "callSign": "2LRR",
+    "region": "Lightning Ridge, NSW"
+  },
+  "contactEmail": "mahmoodkhanteam@gmail.com",
+  "episodes": [
+    {
+      "id": "episode-01",
+      "episodeNumber": 1,
+      "title": "The Beginning",
+      "displayHeading": "Episode 01 — The Beginning",
+      "subtitle": "The songs. The stories. The cultures they created.",
+      "listenerEdition": {
+        "label": "Listen",
+        "url": "https://drive.google.com/file/d/17X4lgek68ijyYVNtHVq--VzESmlfakiv/view?usp=sharing"
+      },
+      "broadcasterEdition": {
+        "label": "Broadcaster file",
+        "url": "https://drive.google.com/file/d/1rwOvtjaacr_HaWX518jv4jUn1xx6bgUP/view?usp=sharing",
+        "format": "MP3",
+        "bitrateKbps": 320,
+        "integratedLoudnessLUFS": -23
+      },
+      "image": "/assets/WORLD_POP_APPROVED_POSTER.jpg"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.radio-page .site-header { position: relative; background: var(--ink); }
+.radio-page [aria-current=page] { color: var(--gold); }
+.radio-hero, .radio-section { padding: clamp(36px,6vw,90px) max(6vw,calc((100vw - 1250px)/2)); }
+.radio-hero { display:grid; grid-template-columns: 1fr 1fr; gap:5vw; align-items:center; background:linear-gradient(120deg,#18242a,var(--ink) 60%,#302016); }
+.poster { display:block; width:100%; height:auto; }
+.radio-hero h1,.radio-page main h2,.episode h3,.radio-article h1,.tagline { font-family:var(--serif); font-weight:400; line-height:1.07; }
+.radio-hero h1 { font-size:clamp(52px,6vw,96px); margin:.2em 0; }
+.tagline { color:var(--gold); font-size:clamp(25px,3vw,43px); margin:.5em 0; }
+.radio-links,.episode-actions { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }
+.radio-links a,.invitation a,.radio-article a { color:var(--gold); text-decoration:underline; text-underline-offset:.22em; }
+.radio-page main h2 { font-size:clamp(32px,4vw,56px); margin:.35em 0 .75em; }
+.episode { border:1px solid #785e42; background:var(--night); padding:clamp(20px,3vw,42px); display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.episode h3 { font-size:clamp(25px,3vw,38px); margin:0; }
+.episode p { margin:.5em 0 0; color:var(--muted); }
+.episode .button { border:1px solid var(--gold); color:var(--gold); min-height:44px; }
+.episode .button:first-child { background:var(--gold); color:var(--ink); }
+.invitation { background:var(--night); }
+.invitation p { max-width:65ch; }
+.radio-article { width:min(90%,72ch); margin:0 auto; padding:clamp(32px,6vw,80px) 0; font-size:clamp(16px,1.4vw,19px); }
+.radio-article h1 { font-size:clamp(40px,6vw,76px); margin:.4em 0; }
+.radio-article h2 { margin-top:1.4em!important; }
+.radio-article .poster { max-height:520px; object-fit:contain; margin:2rem auto; }
+@media(max-width:760px){.radio-hero{grid-template-columns:minmax(0,1fr)}.radio-hero,.radio-section{padding:36px 6vw}.episode-actions{gap:10px}}
+@media print{.site-header,.radio-footer,.analytics-choice,.radio-article>a{display:none!important}.radio-article{width:100%;color:black}.radio-article .poster{max-height:180px}.radio-article a{color:inherit}}
