@@ -12,6 +12,13 @@
 .episode { border:1px solid #785e42; background:var(--night); padding:clamp(20px,3vw,42px); display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
 .episode h3 { font-size:clamp(25px,3vw,38px); margin:0; }
 .episode p { margin:.5em 0 0; color:var(--muted); }
+.episode { display:grid; justify-content:stretch; max-width:54rem; border-top:3px solid var(--gold); margin-bottom:1rem; }
+.episode-player { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.episode-player audio { flex:1 1 200px; width:100%; min-width:0; height:42px; color-scheme:dark; }
+.episode-player button { cursor:pointer; font-family:inherit; }
+.episode-player button[hidden],.episode-status:empty { display:none; }
+.episode-status { flex-basis:100%; }
+.episode-file { justify-self:start; color:var(--gold); text-decoration:underline; text-underline-offset:.22em; }
 .episode .button { border:1px solid var(--gold); color:var(--gold); min-height:44px; }
 .episode .button:first-child { background:var(--gold); color:var(--ink); }
 .invitation { background:var(--night); }
