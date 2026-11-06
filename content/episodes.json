@@ -1,8 +1,8 @@
 {
   "programTitle": "WORLD POP",
-  "tagline": "The songs. The stories. The cultures they created.",
+  "tagline": "The songs. The stories. The cultures they create.",
   "presenterCredit": "Hosted by Mahmood Khan",
-  "poster": "/assets/WORLD_POP_APPROVED_POSTER.jpg",
+  "poster": "/assets/world-pop-poster.jpg",
   "launchDate": "2026-11-14",
   "inauguralBroadcaster": {
     "name": "Opal FM",
@@ -17,7 +17,7 @@
       "episodeNumber": 1,
       "title": "The Beginning",
       "displayHeading": "Episode 01 — The Beginning",
-      "subtitle": "The songs. The stories. The cultures they created.",
+      "subtitle": "The songs. The stories. The cultures they create.",
       "listenerEdition": {
         "label": "Listen",
         "streamUrl": "https://github.com/BeatViral/Mahmood-Khan/releases/download/world-pop-episode-01/world-pop-episode-01-listener.mp3",
@@ -30,7 +30,7 @@
         "bitrateKbps": 320,
         "integratedLoudnessLUFS": -23
       },
-      "image": "/assets/WORLD_POP_APPROVED_POSTER.jpg"
+      "image": "/assets/world-pop-poster.jpg"
     }
   ]
 }
