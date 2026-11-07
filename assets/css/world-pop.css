@@ -9,10 +9,29 @@
 .radio-links,.episode-actions { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }
 .radio-links a,.invitation a,.radio-article a { color:var(--gold); text-decoration:underline; text-underline-offset:.22em; }
 .radio-page main h2 { font-size:clamp(32px,4vw,56px); margin:.35em 0 .75em; }
-.episode { border:1px solid #785e42; background:var(--night); padding:clamp(20px,3vw,42px); display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.episode {
+  display:grid;
+  grid-template-columns:clamp(160px,20vw,256px) minmax(0,1fr);
+  gap:16px clamp(20px,3vw,46px);
+  align-content:center;
+  max-width:70rem;
+  padding:clamp(16px,2.4vw,34px);
+  margin-bottom:1rem;
+  border:1px solid #785e42;
+  border-top:3px solid var(--gold);
+  background:linear-gradient(115deg,#30261e,var(--night) 55%);
+}
+.episode-cover {
+  grid-row:1 / span 3;
+  align-self:center;
+  display:block;
+  width:100%;
+  height:auto;
+  box-shadow:0 5px 18px #0006;
+}
+.episode-cover + div { align-self:end; }
 .episode h3 { font-size:clamp(25px,3vw,38px); margin:0; }
 .episode p { margin:.5em 0 0; color:var(--muted); }
-.episode { display:grid; justify-content:stretch; max-width:54rem; border-top:3px solid var(--gold); margin-bottom:1rem; }
 .episode-player { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
 .episode-player audio { flex:1 1 200px; width:100%; min-width:0; height:42px; color-scheme:dark; }
 .episode-player button { cursor:pointer; font-family:inherit; }
@@ -21,6 +40,12 @@
 .episode-file { justify-self:start; color:var(--gold); text-decoration:underline; text-underline-offset:.22em; }
 .episode .button { border:1px solid var(--gold); color:var(--gold); min-height:44px; }
 .episode .button:first-child { background:var(--gold); color:var(--ink); }
+@media(max-width:640px) {
+  .episode { grid-template-columns:clamp(76px,22vw,132px) minmax(0,1fr); gap:16px; }
+  .episode-cover { grid-row:1; }
+  .episode-cover + div { align-self:center; }
+  .episode-player,.episode-file { grid-column:1 / -1; }
+}
 .invitation { background:var(--night); }
 .invitation p { max-width:65ch; }
 .radio-article { width:min(90%,72ch); margin:0 auto; padding:clamp(32px,6vw,80px) 0; font-size:clamp(16px,1.4vw,19px); }

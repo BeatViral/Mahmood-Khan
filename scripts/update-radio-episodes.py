@@ -10,6 +10,7 @@ for episode in data["episodes"]:
     listener = episode["listenerEdition"]
     station = episode["broadcasterEdition"]
     cards.append(f'''<article class="episode" id="{escape(episode["id"])}">
+<img class="episode-cover" src="{escape(episode.get("image") or data["poster"])}" alt="" width="256" height="256" loading="lazy">
 <div><h3>{escape(episode["displayHeading"])}</h3><p>{escape(episode["subtitle"])}</p></div>
 <div class="episode-player"><button type="button" class="button episode-listen" hidden>{escape(listener["label"])}</button>
 <audio controls preload="none" aria-label="{escape(episode["displayHeading"])}" src="{escape(listener["streamUrl"])}"></audio>
