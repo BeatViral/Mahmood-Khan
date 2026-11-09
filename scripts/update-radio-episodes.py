@@ -17,7 +17,8 @@ for episode in data["episodes"]:
 <audio controls preload="none" aria-label="{escape(episode["displayHeading"])}" src="{escape(listener["streamUrl"])}"></audio>
 <p role="status" class="episode-status"></p></div>
 <div class="episode-links"><button class="episode-share" type="button" hidden>Share episode</button>
-<a class="episode-file" href="{escape(station["url"])}" target="_blank" rel="noopener noreferrer">{escape(station["label"])} ↗</a></div></article>''')
+<a class="episode-file" href="{escape(station["url"])}" target="_blank" rel="noopener noreferrer">{escape(station["label"])} ↗</a>
+<span class="episode-listens" title="Includes a manually set starting count of {episode.get('listenBaseline', 0)}"><span class="episode-listen-total">{episode.get('listenBaseline', 0)}</span> listens<span class="sr-only">, including a manually set starting count of {episode.get('listenBaseline', 0)}</span></span></div></article>''')
 
 page = root / "radio-show/index.html"
 before, rest = page.read_text(encoding="utf-8").split("<!-- EPISODES START -->")

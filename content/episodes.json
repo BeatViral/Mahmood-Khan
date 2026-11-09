@@ -15,6 +15,7 @@
     {
       "id": "episode-01",
       "episodeNumber": 1,
+      "listenBaseline": 50,
       "title": "The Beginning",
       "displayHeading": "Episode 01 — The Beginning",
       "subtitle": "The songs. The stories. The cultures they create.",

@@ -42,6 +42,7 @@
 .episode-share { background:transparent; color:var(--gold); border:1px solid #785e42; padding:10px 16px; font:inherit; cursor:pointer; min-height:44px; }
 .episode-share:hover { background:#e3b06d18; }
 .episode-share[hidden] { display:none; }
+.episode-listens { color:var(--muted); font-size:13px; margin-left:auto; }
 .episode-page-title { font:400 clamp(36px,5vw,64px)/1.1 var(--serif); }
 .episode .button { border:1px solid var(--gold); color:var(--gold); min-height:44px; }
 .episode .button:first-child { background:var(--gold); color:var(--ink); }
