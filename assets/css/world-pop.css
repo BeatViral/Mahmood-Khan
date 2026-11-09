@@ -38,13 +38,18 @@
 .episode-player button[hidden],.episode-status:empty { display:none; }
 .episode-status { flex-basis:100%; }
 .episode-file { justify-self:start; color:var(--gold); text-decoration:underline; text-underline-offset:.22em; }
+.episode-links { display:flex; align-items:center; flex-wrap:wrap; gap:16px 24px; }
+.episode-share { background:transparent; color:var(--gold); border:1px solid #785e42; padding:10px 16px; font:inherit; cursor:pointer; min-height:44px; }
+.episode-share:hover { background:#e3b06d18; }
+.episode-share[hidden] { display:none; }
+.episode-page-title { font:400 clamp(36px,5vw,64px)/1.1 var(--serif); }
 .episode .button { border:1px solid var(--gold); color:var(--gold); min-height:44px; }
 .episode .button:first-child { background:var(--gold); color:var(--ink); }
 @media(max-width:640px) {
   .episode { grid-template-columns:clamp(76px,22vw,132px) minmax(0,1fr); gap:16px; }
   .episode-cover { grid-row:1; }
   .episode-cover + div { align-self:center; }
-  .episode-player,.episode-file { grid-column:1 / -1; }
+  .episode-player,.episode-links { grid-column:1 / -1; }
 }
 .invitation { background:var(--night); }
 .invitation p { max-width:65ch; }
