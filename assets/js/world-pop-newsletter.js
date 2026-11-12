@@ -70,3 +70,28 @@
     status.textContent = 'Guest updates could not load. Please refresh the page to try again.';
   });
 })();
+
+(() => {
+  const button = document.querySelector('.newsletter-share');
+  const status = document.querySelector('.newsletter-share-status');
+  if (!button) return;
+  button.hidden = false;
+  button.addEventListener('click', async () => {
+    const url = 'https://mahmoodkhan.net/radio-show/newsletter/';
+    status.textContent = '';
+    if (navigator.share) {
+      try {
+        await navigator.share({title:'WORLD POP Newsletter', text:'The people, conversations and stories behind WORLD POP.', url});
+        return;
+      } catch (error) {
+        if (error?.name === 'AbortError') return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      status.textContent = 'Newsletter link copied.';
+    } catch {
+      window.prompt('Copy this newsletter link to share it:', url);
+    }
+  });
+})();

@@ -57,3 +57,9 @@
 .newsletter-listening .episode-file { font-size:11px; }
 @media(max-width:850px) { .newsletter-opening { grid-template-columns:minmax(0,1fr); } .newsletter-listening { max-width:560px; width:100%; } }
 @media(max-width:380px) { .newsletter-listening .episode { padding:12px; gap:10px; grid-template-columns:82px minmax(0,1fr); } .newsletter-listening .episode-cover { width:82px; height:82px; } .newsletter-listening .episode h3 { font-size:21px; } }
+
+.newsletter-share { background:transparent; color:var(--gold); border:1px solid #785e42; padding:10px 16px; font:600 12px var(--sans, sans-serif); cursor:pointer; }
+.newsletter-share:hover { background:#e3b06d18; }
+.newsletter-share[hidden] { display:none; }
+.newsletter-share-status { color:var(--muted); font-size:12px; margin:8px 0 0; }
+.newsletter-share-status:empty { display:none; }
