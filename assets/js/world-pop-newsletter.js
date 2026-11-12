@@ -42,7 +42,9 @@
     date.dateTime = guest.dateAdded;
     content.append(date, element('h2', '', guest.name));
     content.append(element('p', 'guest-role', guest.role + (guest.organisation ? ' — ' + guest.organisation : '')));
-    for (const paragraph of guest.contribution) content.append(element('p', '', paragraph));
+    const details = element('details', 'guest-details');
+    details.append(element('summary', '', 'About & conversation'));
+    for (const paragraph of guest.contribution) details.append(element('p', '', paragraph));
     const conversation = element('div', 'guest-conversation');
     conversation.append(
       element('h3', '', guest.episodeListeningLink ? 'On WORLD POP' : 'Coming to WORLD POP'),
@@ -53,7 +55,8 @@
       listen.href = guest.episodeListeningLink;
       conversation.append(listen);
     }
-    content.append(conversation);
+    details.append(conversation);
+    content.append(details);
     card.append(content);
     return card;
   }
