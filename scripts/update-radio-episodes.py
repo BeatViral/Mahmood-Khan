@@ -50,3 +50,14 @@ for episode, card in zip(data["episodes"], cards):
     destination = root / "radio-show/share" / episode["id"] / "index.html"
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(shared_page.encode("utf-8"))
+
+# Keep the newsletter's compact player on the same episode source as the radio page.
+newsletter = root / "radio-show/newsletter/index.html"
+newsletter_text = newsletter.read_text(encoding="utf-8")
+newsletter_text = re.sub(
+    r"<!-- NEWSLETTER PLAYER START -->.*?<!-- NEWSLETTER PLAYER END -->",
+    lambda _: "<!-- NEWSLETTER PLAYER START -->\n" + cards[-1] + "\n<!-- NEWSLETTER PLAYER END -->",
+    newsletter_text,
+    flags=re.S,
+)
+newsletter.write_bytes(newsletter_text.encode("utf-8"))

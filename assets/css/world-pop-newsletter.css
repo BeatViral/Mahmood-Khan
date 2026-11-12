@@ -40,3 +40,20 @@
 .guest-details { grid-column:1 / -1; padding:10px 16px; }
 .guest-details summary { font-size:11px; }
 .guest-text-only .guest-copy { grid-column:1 / -1; }
+
+.newsletter-opening { grid-template-columns:minmax(0,1.2fr) minmax(340px,1fr); gap:32px; }
+.newsletter-listening { min-width:0; }
+.newsletter-listening .episode { grid-template-columns:100px minmax(0,1fr); padding:18px; gap:14px; margin:0; }
+.newsletter-listening .episode-cover { width:100px; height:100px; grid-row:1; object-fit:cover; }
+.newsletter-listening .episode-cover + div { align-self:center; }
+.newsletter-listening .episode h3 { font-size:24px; line-height:1.15; }
+.newsletter-listening .episode p { font-size:12px; line-height:1.6; }
+.newsletter-listening .episode-player,.newsletter-listening .episode-links { grid-column:1 / -1; }
+.newsletter-listening .episode-player { gap:8px; }
+.newsletter-listening .episode-player audio { flex:1 1 160px; height:36px; }
+.newsletter-listening .episode .button { min-height:36px; padding:9px 12px; font-size:10px; }
+.newsletter-listening .episode-links { gap:12px; }
+.newsletter-listening .episode-share { font-size:11px; padding:6px 10px; min-height:32px; }
+.newsletter-listening .episode-file { font-size:11px; }
+@media(max-width:850px) { .newsletter-opening { grid-template-columns:minmax(0,1fr); } .newsletter-listening { max-width:560px; width:100%; } }
+@media(max-width:380px) { .newsletter-listening .episode { padding:12px; gap:10px; grid-template-columns:82px minmax(0,1fr); } .newsletter-listening .episode-cover { width:82px; height:82px; } .newsletter-listening .episode h3 { font-size:21px; } }
