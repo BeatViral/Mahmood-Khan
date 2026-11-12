@@ -56,8 +56,7 @@
       conversation.append(listen);
     }
     details.append(conversation);
-    content.append(details);
-    card.append(content);
+    card.append(content, details);
     return card;
   }
   fetch('/content/world-pop-guests.json').then(response => {
