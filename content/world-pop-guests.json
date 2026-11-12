@@ -1,0 +1,75 @@
+[
+  {
+    "id": "kenneth-lampl",
+    "name": "Kenneth Lampl",
+    "role": "Composer and Orchestrator",
+    "organisation": "",
+    "contribution": [
+      "Kenneth Lampl is a composer whose work spans film, orchestral music and popular music. His career includes orchestral collaborations involving Foreigner, Evanescence and Radiohead."
+    ],
+    "conversation": "A conversation about film music, orchestras, composition, improvisation and the art of musical storytelling.",
+    "photograph": "/assets/images/world-pop-guests/kenneth-lampl.jpg",
+    "photoSource": "https://www.kenlampl.com/bio",
+    "dateAdded": "2026-11-13",
+    "episodeListeningLink": null
+  },
+  {
+    "id": "gemma-cadwallader",
+    "name": "Gemma Cadwallader",
+    "role": "Head of Brand & Sponsorships",
+    "organisation": "Allianz Australia",
+    "contribution": [
+      "Gemma works at the intersection of brand storytelling, sponsorship and creative communications.",
+      "Her work offers a fascinating perspective on how established songs can bring emotion, familiarity and meaning to visual storytelling."
+    ],
+    "conversation": "The music behind Allianz campaigns, including songs by Sia and Avril Lavigne, and the relationship between popular music and advertising.",
+    "photograph": "/assets/images/world-pop-guests/gemma-cadwallader.jpg",
+    "photoSource": "https://au.linkedin.com/in/gemma-cadwallader-51824a7b",
+    "dateAdded": "2026-11-13",
+    "episodeListeningLink": null
+  },
+  {
+    "id": "sally-beard",
+    "name": "Sally Beard",
+    "role": "Founder",
+    "organisation": "Backpacks 4 Vic Kids",
+    "contribution": [
+      "Sally Beard founded Backpacks 4 Vic Kids, an organisation supporting vulnerable children by providing essential belongings and practical assistance during difficult transitions.",
+      "Her work demonstrates how a community initiative can grow into meaningful support for children and families."
+    ],
+    "conversation": "The human stories behind Backpacks 4 Vic Kids and the power of community contribution.",
+    "photograph": "/assets/images/world-pop-guests/sally-beard.jpg",
+    "photoSource": "https://www.backpacks4vickids.org.au/about/",
+    "dateAdded": "2026-11-13",
+    "episodeListeningLink": null
+  },
+  {
+    "id": "janet-hunt",
+    "name": "Dr Janet Hunt",
+    "role": "Researcher",
+    "organisation": "Australian National University",
+    "contribution": [
+      "Dr Janet Hunt's work explores Indigenous community governance, development, social policy and the importance of community leadership.",
+      "Her research examines how communities shape their own futures and how institutions can better understand their priorities."
+    ],
+    "conversation": "Community, cultural identity, Indigenous governance and the experiences that shape people's lives.",
+    "photograph": "/assets/images/world-pop-guests/janet-hunt.jpg",
+    "photoSource": "https://genderinstitute.anu.edu.au/people/associate-professor-janet-hunt",
+    "dateAdded": "2026-11-13",
+    "episodeListeningLink": null
+  },
+  {
+    "id": "david-shirley",
+    "name": "Professor David Shirley",
+    "role": "Executive Dean",
+    "organisation": "Western Australian Academy of Performing Arts (WAAPA), Edith Cowan University",
+    "contribution": [
+      "Professor David Shirley is a performing arts educator and academic leader whose work contributes to the development of performers, artists and creative education."
+    ],
+    "conversation": "Artistic identity, performing arts education, creative expression and the future of young performers.",
+    "photograph": null,
+    "photoSource": null,
+    "dateAdded": "2026-11-13",
+    "episodeListeningLink": null
+  }
+]
