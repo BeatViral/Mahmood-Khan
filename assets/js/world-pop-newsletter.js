@@ -47,7 +47,7 @@
     for (const paragraph of guest.contribution) details.append(element('p', '', paragraph));
     const conversation = element('div', 'guest-conversation');
     conversation.append(
-      element('h3', '', guest.episodeListeningLink ? 'On WORLD POP' : 'Coming to WORLD POP'),
+      element('h3', '', guest.episodeListeningLink ? 'On WORLD POP' : (guest.conversationHeading || 'Coming to WORLD POP')),
       element('p', '', guest.conversation)
     );
     if (guest.episodeListeningLink) {

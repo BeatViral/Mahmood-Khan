@@ -1,5 +1,20 @@
 [
   {
+    "id": "trey-carlisle",
+    "name": "Trey Carlisle",
+    "role": "Program Director; Black Legacy Project Co-Director",
+    "organisation": "Music In Common",
+    "contribution": [
+      "Trey Carlisle is Program Director at Music In Common and Co-Director of the Black Legacy Project. His work brings musicians and communities together through music, storytelling and dialogue across cultural divides."
+    ],
+    "conversationHeading": "Exploring a conversation",
+    "conversation": "Connecting with Mahmood to explore their work as musicians, building bridges across cultures and possibilities for collaboration. An introductory conversation is being arranged.",
+    "photograph": "/assets/images/world-pop-guests/trey-carlisle.jpg",
+    "photoSource": "https://www.musicincommon.org/about",
+    "dateAdded": "2026-11-13",
+    "episodeListeningLink": null
+  },
+  {
     "id": "kenneth-lampl",
     "name": "Kenneth Lampl",
     "role": "Composer and Orchestrator",
