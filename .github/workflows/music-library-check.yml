@@ -1,0 +1,25 @@
+name: Music library generator check
+on:
+  pull_request:
+    paths:
+      - 'content/music-library.json'
+      - 'scripts/build-music-library.cjs'
+      - 'music-library/**'
+      - 'sitemap.xml'
+      - '.github/workflows/music-library-check.yml'
+  push:
+    paths:
+      - 'content/music-library.json'
+      - 'scripts/build-music-library.cjs'
+      - 'music-library/**'
+      - 'sitemap.xml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify reviewed content and pre-generated HTML
+        run: node scripts/build-music-library.cjs --check
