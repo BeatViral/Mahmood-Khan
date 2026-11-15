@@ -1,0 +1,502 @@
+[
+  {
+    "slug": "microphone-distance-changes-vocal-tone",
+    "category": "Recording & voice",
+    "title": "How microphone distance changes the sound of a voice",
+    "description": "A singer's movement can alter bass, room tone and level before any plug-in is added.",
+    "summary": "A singer's movement can alter bass, room tone and level before any plug-in is added.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "Microphone distance is a creative choice as well as a technical one. A directional microphone often becomes bass-heavier when the source moves very close, a phenomenon known as proximity effect. As the singer moves farther away, more room reflection enters the recording relative to the direct voice. A small distance change therefore changes both tone and the apparent intimacy of the performance."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Consistency is especially important when several takes must be edited together. A phrase sung close to the microphone may not match the tone of a later phrase recorded farther back. A performer can still move for expressive reasons, but the engineer should know the effect and listen for it rather than attempt to repair every change with EQ."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Record the same phrase at three distances, for example 10, 20 and 40 centimetres, while maintaining safe input levels. Compare the low end, consonants and room sound at matched playback volume. Repeat with a different polar pattern if the microphone offers one. The best distance is the one that serves that particular voice and room."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "No single distance works for every microphone or singer. Shure's guidance offers starting ranges and explains why placement matters. Use them as starting points for listening, not rigid production rules."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Microphone and recording guide — Shure",
+        "url": "https://www.shure.com/en-US/insights/how-to-record-and-mix-vocals"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "pop-filters-and-plosive-control",
+    "category": "Recording & voice",
+    "title": "What a pop filter actually fixes in vocal recording",
+    "description": "Plosives, sibilance and microphone technique are different problems requiring different listening decisions.",
+    "summary": "Plosives, sibilance and microphone technique are different problems requiring different listening decisions.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "The bursts of air on consonants such as P and B can produce a large low-frequency thump when they strike a microphone capsule. A pop filter placed between singer and microphone reduces the direct blast while allowing the performance to continue. This is different from sibilance, the strong high-frequency energy often heard on S and T sounds."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Tilting a microphone slightly away from the direct air stream can help with plosives. Moving the capsule slightly above or below the mouth changes the path of airflow and may also alter tone. A pop filter can act as a visible distance marker, reducing sudden changes between takes."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Make three recordings of the same sentence containing several P and S sounds: directly on-axis, with a pop filter, and with a slight angle change. Compare the unwanted low-frequency bursts and the clarity of the syllables separately. If the S remains sharp, a pop filter alone is not expected to solve it."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "An engineer should not use heavy processing to correct a problem that can be prevented acoustically. But performance comfort matters: the cleanest take is not necessarily the most expressive take if the setup makes a singer cautious."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Microphone and recording guide — Shure",
+        "url": "https://www.shure.com/en-US/docs/education/microphone-techniques-for-recording"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "cardioid-omni-figure-eight-microphones",
+    "category": "Recording & voice",
+    "title": "Cardioid, omni and figure-eight: three ways a microphone hears a room",
+    "description": "Polar patterns describe directional sensitivity, not simply microphone quality.",
+    "summary": "Polar patterns describe directional sensitivity, not simply microphone quality.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "A cardioid microphone is most sensitive from the front and reduces sound arriving from behind. An omnidirectional pattern accepts sound from all around, while a figure-eight pattern is sensitive at the front and back with side rejection. Each choice changes the proportion of direct music, room reflections and unwanted noise captured by a recording."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "An omni may sound natural in a good acoustic space but can capture more room than desired in a bedroom studio. A cardioid can help isolate a singer, although off-axis colouration and proximity effect still matter. A figure-eight can be useful for certain two-person or stereo arrangements, but its rear pickup must be considered."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Place one microphone in the same position and compare patterns if available. Record a singer standing still, then a person walking around the microphone speaking at a consistent distance. Listen to how the tone and level change as the sound moves to the side and rear."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "Directional patterns are frequency-dependent in real microphones and no specification guarantees immunity from room acoustics. Choose by the actual environment and musical aim, not the polar-pattern icon on a product page."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Microphone and recording guide — Shure",
+        "url": "https://www.shure.com/en-US/insights/microphone-basics-transducers-polar-patterns-frequency-response"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "the-room-is-part-of-the-recording",
+    "category": "Recording & voice",
+    "title": "Why the room is part of every home-studio vocal take",
+    "description": "Hard surfaces, early reflections and microphone placement shape the recorded voice.",
+    "summary": "Hard surfaces, early reflections and microphone placement shape the recorded voice.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "A voice reaches the microphone directly and after bouncing off walls, ceilings, desks and windows. Those reflections arrive slightly later than the original sound and combine with it. A room that looks quiet may still change tone through reflections; turning the microphone or shifting the singer's position can alter the result."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Small rooms can sound boxy, while hard reflective surfaces often make speech and singing less clear. A soft furnishing may reduce some high-frequency reflection but will not automatically solve bass resonances. This is why a thick curtain and a properly designed absorber do different jobs."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Record a spoken paragraph in the centre of a room, close to a bare wall and near a reasonably absorptive area. Keep microphone and gain settings the same. Compare the tail after each phrase and the apparent clarity of consonants. Notice also what happens when you turn the microphone away from the nearest hard surface."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "Professional results are possible without a costly purpose-built studio, but 'soundproofing' and 'acoustic treatment' must not be confused. One controls sound passing between spaces; the other changes how sound behaves inside a room."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Microphone and recording guide — Shure",
+        "url": "https://www.shure.com/en-US/docs/education/microphone-techniques-for-recording"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "recording-levels-and-headroom",
+    "category": "Recording & voice",
+    "title": "What headroom means when recording vocals",
+    "description": "Leaving room below digital clipping protects unpredictable performance peaks.",
+    "summary": "Leaving room below digital clipping protects unpredictable performance peaks.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "An analogue preamp and digital converter have finite capacity. If the incoming level is pushed above the converter's maximum, the waveform can clip. Setting gain so that ordinary phrases sit comfortably below the digital ceiling leaves headroom for an unexpected powerful note or consonant. There is no need to record every track as close to zero dBFS as possible."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Headroom is especially valuable when capturing an emotional take. A singer should not have to restrain a performance because the engineer chose an aggressive input level. Good gain staging means useful signal without avoidable overload; noise performance and available preamp gain matter too."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Have a performer sing their loudest expected section before recording the full take. Set gain using those peaks, then record the quieter passage without moving the knob. Inspect the waveform and listen for clipping. Compare this with a deliberately overloaded short test at safe monitoring volume to recognise distortion."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "Do not confuse a low waveform display with low quality. Modern recording systems usually have enough dynamic range to leave sensible safety margin. Peak level during tracking is a technical constraint, not the measure of a song's energy."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Recording and monitoring reference — Ableton",
+        "url": "https://www.ableton.com/en/manual/recording-new-clips/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "recording-latency-and-singer-confidence",
+    "category": "Recording & voice",
+    "title": "Why a few milliseconds of delay can disturb a singer",
+    "description": "Monitoring latency changes the relationship between a musician's action and the sound returned to their headphones.",
+    "summary": "Monitoring latency changes the relationship between a musician's action and the sound returned to their headphones.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "When a voice passes through an audio interface, a computer buffer and a chain of plug-ins, the monitored signal can arrive late. Some singers experience the delay as an uncomfortable doubling or a loss of timing confidence. The recording may still be valid, but the performance experience changes because the singer hears the result after producing the note."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Many interfaces provide direct monitoring that sends the input to the headphones before it passes through the computer's processing path. Alternatively, a small buffer and light plug-in chain may reduce software-monitoring delay. It is important not to monitor the same signal through both paths unintentionally."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Record a rhythmic spoken phrase with interface direct monitoring, then with software monitoring and increasing buffer sizes. Ask the performer which configuration feels natural and whether they change delivery. If the sound doubles, check for two active monitoring paths before blaming the microphone."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "Latency is not the same as a recorded track being placed incorrectly on the timeline. Software may compensate for recording offsets separately. Solve the musician's live monitoring experience and the editor's alignment problem as two distinct tasks."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Recording and monitoring reference — Ableton",
+        "url": "https://help.ableton.com/hc/en-us/articles/7938193554460-Recording-Audio"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "vocal-comping-without-losing-character",
+    "category": "Recording & voice",
+    "title": "Vocal comping: choosing the best moments without losing a performance",
+    "description": "Editing can combine strong passages from several takes, but continuity is a musical decision.",
+    "summary": "Editing can combine strong passages from several takes, but continuity is a musical decision.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "Comping means selecting phrases or fragments from multiple takes to construct a finished vocal performance. The technique can preserve a wonderful opening from one take and a better sustained note from another. But a singer's tone, breath, proximity to the microphone and emotional attitude may differ across attempts. The technically cleanest fragments do not always belong together."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "A convincing comp should sound like one unfolding thought. Matching the loudness of adjacent segments is only part of that; the timing of a breath can make the next line feel inevitable or awkward. Crossfades should avoid clicks while respecting consonants and musical phrasing."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Record three complete performances of a short song section. Before looking at waveforms, write which take communicates the clearest emotion. Build a comp by changing as few phrases as possible. Then listen with eyes closed and compare it with the strongest uninterrupted take."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "A comp does not prove the singer could deliver the exact constructed sequence in one continuous performance. That is not always the artistic goal. The important question is whether the edit supports the emotional integrity of the song."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Recording and monitoring reference — Ableton",
+        "url": "https://www.ableton.com/en/manual/recording-new-clips/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "vocal-doubling-versus-harmony",
+    "category": "Recording & voice",
+    "title": "Vocal doubling and harmony are not the same thing",
+    "description": "Two takes of one melody create a different effect from two distinct simultaneous pitches.",
+    "summary": "Two takes of one melody create a different effect from two distinct simultaneous pitches.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "A double is another performance of essentially the same melodic line, recorded separately. Small differences in timing, pitch and articulation can make the voice sound wider or more forceful. A harmony part usually adds different notes that work with the lead melody. The combined result may provide harmonic direction as well as thickness."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "If the double is too precise it can simply add level; if it differs too much it can blur consonants and phrasing. Harmony parts introduce a different challenge: they must fit the chord progression and not distract from the lyric. Placement in the stereo field and relative level are arrangement decisions rather than automatic 'more is better' upgrades."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Record one lead melody, a second independent unison take, and a separate harmony line. Compare three mixes at matched volume: lead alone, lead plus double, and lead plus harmony. Listen for intelligibility, emotional emphasis and how the apparent size of the performer changes."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "Pitch-correction or delay plug-ins can imitate aspects of doubling, but two human performances have different micro-variations. Neither approach is inherently superior. Choose by the sound the song actually needs."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Recording and monitoring reference — Ableton",
+        "url": "https://www.ableton.com/en/manual/recording-new-clips/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "monitoring-on-headphones-while-tracking",
+    "category": "Recording & voice",
+    "title": "What singers need from a headphone mix",
+    "description": "A headphone balance should support pitch, timing and confidence, not merely copy the control-room mix.",
+    "summary": "A headphone balance should support pitch, timing and confidence, not merely copy the control-room mix.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "A singer may need the lead instrument, groove and their own voice at different relative levels from the engineer's preferred production balance. Too little vocal feedback can cause over-singing; too much can make timing and emotional delivery feel unnatural. Headphones also change how the singer hears the room and their own internal voice."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Closed-back headphones are often useful during vocal tracking because they reduce sound leaking into the microphone. A little reverb in the monitoring path may help a singer feel comfortable, but it should not obscure pitch and timing. The effect heard during tracking need not be printed permanently into the recorded signal."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Ask the vocalist to perform the same passage with three headphone balances: vocal prominent, accompaniment prominent and a carefully adjusted mix. Observe whether their dynamics, pitch confidence or sense of groove changes. Let the singer choose a useful balance before continuing."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "The best monitoring mix is individual. An engineer's polished playback mix is not necessarily the best one for a person who must create a performance in real time."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Recording and monitoring reference — Ableton",
+        "url": "https://help.ableton.com/hc/en-us/articles/7938193554460-Recording-Audio"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "acoustic-guitar-microphone-position",
+    "category": "Recording & voice",
+    "title": "How to find an acoustic guitar's microphone sweet spot",
+    "description": "Acoustic instruments radiate different frequencies in different directions, so tiny placement changes matter.",
+    "summary": "Acoustic instruments radiate different frequencies in different directions, so tiny placement changes matter.",
+    "source": "AI-assisted production research",
+    "sections": [
+      {
+        "heading": "The underlying sound",
+        "paragraphs": [
+          "An acoustic guitar is not a single point source. Strings, bridge, soundboard and body contribute different frequencies, and their sound combines as it travels through the room. A microphone directly at the soundhole may capture a different balance from one aimed toward the neck joint or a position farther away. The right choice depends on the player's technique and the arrangement."
+        ]
+      },
+      {
+        "heading": "What changes in practice",
+        "paragraphs": [
+          "Close miking can emphasise detail and reduce room pickup, while greater distance may create a more integrated sound if the acoustic space is good. Stereo techniques can add width, but mismatched arrival times can lead to phase problems when the channels are combined."
+        ]
+      },
+      {
+        "heading": "Try it in the studio",
+        "paragraphs": [
+          "Record the same short guitar phrase with the microphone near the soundhole, near the twelfth fret and farther from the instrument. Match the level in playback and compare bass weight, pick noise and body resonance. Check the sound in mono before deciding on stereo microphone combinations."
+        ]
+      },
+      {
+        "heading": "The decision that matters",
+        "paragraphs": [
+          "Do not search for one universally correct position. A fingerpicked part beneath a delicate vocal may need a different tone from a rhythmic acoustic part driving an energetic song."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Microphone and recording guide — Shure",
+        "url": "https://www.shure.com/en-US/docs/education/microphone-techniques-for-recording"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Listen to WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  }
+]
