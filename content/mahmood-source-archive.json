@@ -1,0 +1,267 @@
+{
+  "title": "Mahmood Khan — Sources, Interviews & Documentary Archive",
+  "description": "An indexed reference collection distinguishing firsthand interviews, archived video listings, newspaper reporting and artist announcements.",
+  "updated": "2026-11-16",
+  "sources": [
+    {
+      "id": "film-journey-of-a-new-sound",
+      "title": "Journey of a New Sound — documentary listing",
+      "type": "Documentary (original video pending)",
+      "publisher": "Mahmood Khan / MKF archive",
+      "date": "2011-11-17",
+      "url": "https://mkfworld.wordpress.com/2011/11/17/directed-by-hungarian-film-maker-zsolt-nagy-watch-this-inspiring-documentary-about-mahmood-khan/",
+      "status": "Archived announcement found; direct YouTube ID and transcript not recovered",
+      "summary": "2011 historical listing credits Hungarian filmmaker Zsolt Nagy and describes a documentary about Mahmood Khan. The 2022 Daily Times article also discusses it.",
+      "topics": [
+        "Documentary",
+        "Creative resilience",
+        "Film"
+      ]
+    },
+    {
+      "id": "video-mark-olford",
+      "title": "Mark Olford — 50 million views special interview",
+      "type": "Television interview (video pending)",
+      "publisher": "Mahmood Khan / MKF archive",
+      "date": "2011-11-17",
+      "url": "https://mkfworld.wordpress.com/2011/11/17/watch-the-special-tv-edition-celebrating-50-million-views-mahmood-khans-in-depth-interview-by-mark-olford/",
+      "status": "Archived interview listing found; original video and transcript not recovered",
+      "summary": "Historic post identifies Mark Olford as interviewer for an in-depth television special about the artist's early digital audience.",
+      "topics": [
+        "Digital audience",
+        "Television",
+        "Interview"
+      ]
+    },
+    {
+      "id": "video-pakistan-news",
+      "title": "Pakistan television interviews and news appearances",
+      "type": "Television archive (videos pending)",
+      "publisher": "Mahmood Khan / MKF archive",
+      "date": "2011-11-17",
+      "url": "https://mkfworld.wordpress.com/category/naushad/",
+      "status": "Archive category lists embedded video entries; individual YouTube IDs and dialogue not reviewed",
+      "summary": "Historical category page lists Pakistan news-network interviews and television coverage from 2011.",
+      "topics": [
+        "Pakistan",
+        "Television",
+        "Interviews"
+      ]
+    },
+    {
+      "id": "interview-dailytimes-2020-july",
+      "title": "Mahmood Khan — Symphony Orchestra and origins, interview by Saira Agha",
+      "type": "First-person newspaper interview",
+      "publisher": "Daily Times",
+      "date": "2020-07-12",
+      "url": "https://dailytimes.com.pk/639202/mahmood-khan-only-pakistani-artist-to-record-original-songs-with-a-symphony-orchestra/",
+      "status": "Interview text reviewed",
+      "summary": "Detailed discussion of Sadiq Public School, Los Angeles engineering, Nusrat Fateh Ali Khan recording sessions, the Sydney Opera House, musical influences and Willoughby Symphony.",
+      "topics": [
+        "Early years",
+        "Los Angeles",
+        "Nusrat Fateh Ali Khan",
+        "Sydney Opera House",
+        "Orchestras"
+      ]
+    },
+    {
+      "id": "interview-dailytimes-2020-aug",
+      "title": "Pride of Pakistan: Mahmood Khan — interview by Saira Agha",
+      "type": "First-person newspaper interview",
+      "publisher": "Daily Times",
+      "date": "2020-08-28",
+      "url": "https://dailytimes.com.pk/660177/pride-of-pakistan-mahmood-khan/",
+      "status": "Interview text reviewed",
+      "summary": "Firsthand explanations of the inherited record collection, Bee Gees influence, orchestral recording production and video direction, Sydney Opera House and early career.",
+      "topics": [
+        "Early years",
+        "Songwriting",
+        "Orchestras",
+        "Film",
+        "Sydney Opera House"
+      ]
+    },
+    {
+      "id": "interview-apogee",
+      "title": "Artist's Story — Mahmood Khan, Apogee/Amber Technology",
+      "type": "First-person equipment interview",
+      "publisher": "Apogee / Amber Technology",
+      "date": "",
+      "url": "https://315136.fs1.hubspotusercontent-ap1.net/hubfs/315136/Mahmood_Khan.pdf",
+      "status": "PDF text accessible; visual PDF check incomplete",
+      "summary": "Firsthand account of starting as a second engineer in 1987, digital recording, the Apogee Symphony interface and mixing sound and colour.",
+      "topics": [
+        "Audio engineering",
+        "Digital converters",
+        "Production philosophy"
+      ]
+    },
+    {
+      "id": "interview-soundbetter",
+      "title": "Mahmood Khan — studio methods and production philosophy",
+      "type": "First-person studio interview",
+      "publisher": "SoundBetter",
+      "date": "",
+      "url": "https://soundbetter.com/profiles/10386-mahmood-khan",
+      "status": "Interview text reviewed",
+      "summary": "Long Q&A addressing microphone choice, song production, digital versus analogue, fresh-ear mixing and a personal studio setup.",
+      "topics": [
+        "Audio engineering",
+        "Microphones",
+        "Mixing",
+        "Songwriting"
+      ]
+    },
+    {
+      "id": "radio-online-2010",
+      "title": "Mahmood Khan to start weekly Internet programme",
+      "type": "Artist announcement",
+      "publisher": "Mahmood Khan / MKF archive",
+      "date": "2010-04-14",
+      "url": "https://mkfworld.wordpress.com/2010/04/14/mahmood-khan-to-start-weekly-internet-program/",
+      "status": "Announcement text reviewed; broadcasts not independently verified",
+      "summary": "A contemporary announcement describing an internet programme planned from recording studios and significant places in the artist's life.",
+      "topics": [
+        "Broadcasting",
+        "Early online programme",
+        "WORLD POP roots"
+      ]
+    },
+    {
+      "id": "pressrelease-online-2010",
+      "title": "Journey of a New Sound — early Livestream programme announcement",
+      "type": "Press release (self-reported)",
+      "publisher": "PressRelease.com",
+      "date": "2010",
+      "url": "https://news.pressrelease.com/news/brand-new-music-phenomenon-emerging-from-australia-promises-to-take-the-169854",
+      "status": "Promotional release text reviewed; not independent verification of episode archive",
+      "summary": "Describes the similarly titled Livestream programme with unplugged performances, studio production and audience interactions.",
+      "topics": [
+        "Broadcasting",
+        "Digital audience",
+        "Music production"
+      ]
+    },
+    {
+      "id": "profile-triplej",
+      "title": "Mahmood Khan — Triple J Unearthed artist profile",
+      "type": "Artist profile and track archive",
+      "publisher": "ABC triple j Unearthed",
+      "date": "2017",
+      "url": "https://www.abc.net.au/triplejunearthed/artist/mahmood-khan",
+      "status": "Search-indexed profile found; page not opened directly",
+      "summary": "Archived artist biography and listed tracks including Berlin and Like the River.",
+      "topics": [
+        "Discography",
+        "Australian radio",
+        "Artist biography"
+      ]
+    },
+    {
+      "id": "news-thenews-2017",
+      "title": "Mahmood Khan to hold concerts in Pakistan",
+      "type": "Newspaper report",
+      "publisher": "The News International",
+      "date": "2017-10-03",
+      "url": "https://www.thenews.com.pk/print/234051-Mahmood-Khan-to-hold-concerts-in-Pakistan",
+      "status": "Search-indexed article text reviewed; direct open unavailable",
+      "summary": "2017 account of planned concerts and the artist's path through Los Angeles, Pakistan and Australia.",
+      "topics": [
+        "Live performance",
+        "Pakistan",
+        "World Pop"
+      ]
+    },
+    {
+      "id": "news-thenews-2020",
+      "title": "Pakistan singer-song writer shines in US",
+      "type": "Newspaper report",
+      "publisher": "The News International",
+      "date": "2020-06-11",
+      "url": "https://www.thenews.com.pk/print/671096-pakistan-singer-song-writer-shines-in-us",
+      "status": "Search-indexed article text reviewed",
+      "summary": "Reports 2020 music and radio activity; chart and sales claims require original chart verification.",
+      "topics": [
+        "Music industry",
+        "Radio",
+        "Chart history"
+      ]
+    },
+    {
+      "id": "news-dailytimes-2022-doco",
+      "title": "Rarity and retrospective reference to Journey of a New Sound",
+      "type": "Newspaper article",
+      "publisher": "Daily Times",
+      "date": "2022",
+      "url": "https://dailytimes.com.pk/953992/mahmood-khans-rarity-creating-buzz-more-than-two-months-post-release/",
+      "status": "Search-indexed reference found; documentary itself not screened",
+      "summary": "Published retrospective identifies Zsolt Nagy and discusses the documentary's focus on resilience in Australia.",
+      "topics": [
+        "Documentary",
+        "Film",
+        "Career"
+      ]
+    },
+    {
+      "id": "press-prlog-2020",
+      "title": "Mahmood Khan cracks iTunes Australia Top Ten Charts",
+      "type": "Artist press release",
+      "publisher": "PRLog",
+      "date": "2020-04-03",
+      "url": "https://www.prlog.org/12817161-mahmood-khan-cracks-itunes-australia-top-ten-charts.html",
+      "status": "Press release reviewed; promotional source",
+      "summary": "Includes leads to a Power FM Ballarat interview and linked Willoughby Symphony/Jagamarra performance videos.",
+      "topics": [
+        "Community radio",
+        "Interviews",
+        "Orchestras"
+      ]
+    },
+    {
+      "id": "radio-opal-2026",
+      "title": "WORLD POP with Mahmood Khan — official radio archive",
+      "type": "Artist programme",
+      "publisher": "mahmoodkhan.net",
+      "date": "2026-11",
+      "url": "https://mahmoodkhan.net/radio-show/",
+      "status": "Existing official programme page",
+      "summary": "The present radio programme archive; each verified published episode can be linked to related historical sources.",
+      "topics": [
+        "WORLD POP",
+        "Broadcasting",
+        "Current work"
+      ]
+    },
+    {
+      "id": "media-official-playlist",
+      "title": "Mahmood Khan — official YouTube media playlist",
+      "type": "Video collection",
+      "publisher": "Mahmood Khan official playlist",
+      "date": "",
+      "url": "https://www.youtube.com/playlist?list=PLG3VMCE8CkhQ",
+      "status": "Listed in existing site press archive; individual video inventory not yet verified",
+      "summary": "Starting point for the video-by-video interview inventory. Playlist URL comes from the official website's press section.",
+      "topics": [
+        "Video",
+        "Live performance",
+        "Television"
+      ]
+    },
+    {
+      "id": "interview-audioboom",
+      "title": "From engineering Coolio's Gangsta's Paradise to Australia — interview",
+      "type": "Audio interview",
+      "publisher": "Audioboom",
+      "date": "",
+      "url": "https://audioboom.com/posts/7540248-from-engineering-on-coolio-s-gangstas-paradise-vanessa-williams-the-right-stuff-australia",
+      "status": "Link already preserved in existing official press archive; full audio not reviewed",
+      "summary": "Podcast interview discussed in the artist's prior press archive. Specific production credits require listening and checking.",
+      "topics": [
+        "Los Angeles",
+        "Engineering",
+        "Interview"
+      ]
+    }
+  ]
+}
