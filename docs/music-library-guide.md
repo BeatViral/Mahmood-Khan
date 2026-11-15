@@ -11,6 +11,10 @@ The knowledge library is part of the existing static HTML website. No WordPress,
 
 The builder generates /music-library/index.html, each /music-library/[slug]/index.html and the root sitemap.xml. All article bodies appear in the HTML returned to crawlers without requiring JavaScript.
 
+## No GitHub Actions or paid CI required
+
+This site is published from Git to Cloudflare as static HTML. The music library does **not** depend on GitHub Actions, paid GitHub runners or a separate build service. The generated article files and sitemap are committed directly into the repository. Validate locally (or in the connected coding environment) with `node scripts/build-music-library.cjs --check` before merging. Historical failed GitHub Actions runs may remain visible in the pull-request history, but no music-library workflow is included in the proposed change.
+
 ## Editorial rules
 
 - **WORLD POP is the ongoing source**. Episodes can lead to one or more articles, but publication is based on the actual recorded episode, approved transcript or verified editorial notes. A topic discussed for an unreleased episode must **not** be represented as a broadcast transcript or a published recording.
