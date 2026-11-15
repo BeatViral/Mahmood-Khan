@@ -1,0 +1,502 @@
+[
+  {
+    "slug": "studio-monitor-placement-triangle",
+    "category": "Sound & equipment",
+    "title": "Why studio monitors are usually placed in a triangle",
+    "description": "Equal distances and symmetrical positioning help create a stable stereo listening picture.",
+    "summary": "Equal distances and symmetrical positioning help create a stable stereo listening picture.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "Two studio monitors can create an apparent soundstage between them, but their placement strongly affects that illusion. A common starting point is an equilateral triangle with the listener at one corner and the speakers at the others, aimed toward the listening position. The equal paths help sound from left and right reach the listener under similar conditions."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "Room geometry also matters. A speaker close to one wall and far from another can experience different reflections and bass response from its partner. Moving the chair a modest distance may change the balance you hear, even though the audio files and monitors remain unchanged."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Place two speakers at matched height and distance. Listen to a centrally panned vocal, then shift your chair 30 centimetres to one side. Does the voice seem to move toward one speaker? Restore the symmetrical position and test a carefully chosen recording with clear left-to-right instrument placement."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "The triangle is a starting geometry, not a guarantee of accuracy. Room modes, speaker directivity and desk reflections also affect results. Measuring and listening in the actual space is more useful than assuming an expensive monitor will defeat poor placement."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Genelec monitoring and acoustics reference",
+        "url": "https://cms-gateway-production.genelec.com/en/web/site/monitor-placement"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "acoustic-treatment-versus-soundproofing",
+    "category": "Sound & equipment",
+    "title": "Acoustic treatment is not the same as soundproofing",
+    "description": "Reducing reflections inside a studio and preventing noise transmission are different engineering goals.",
+    "summary": "Reducing reflections inside a studio and preventing noise transmission are different engineering goals.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "Acoustic treatment aims to improve how sound behaves inside a room. Absorbers, bass traps and placement choices can manage reflections, decay and resonances that interfere with monitoring or recording. Soundproofing addresses transmission between rooms or from outside, often involving airtight construction, mass and mechanical isolation."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "A bedroom with curtains, rugs and furniture may feel less reflective but still admit traffic noise. Thick absorptive panels may improve vocal clarity without preventing a loud drummer from disturbing a neighbour. Conversely, a room built to stop outside sound can still contain problematic internal reflections."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Record a sharp handclap or spoken syllable at several places in the room. Note flutter echoes or long tails. Then compare what is heard outside the closed room while music plays at a safe level. These listening tests reveal two different problems that should not be solved with the same shopping list."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "Acoustic foam is not a universal bass solution, and ordinary treatment is not a substitute for building isolation. Spend first on identifying the actual limitation: reflections at the microphone, misleading bass at the mix position or unwanted external noise."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Genelec monitoring and acoustics reference",
+        "url": "https://support.genelec.com/hc/en-us/articles/360013368680-How-do-I-acoustically-treat-my-room-so-that-I-get-the-best-from-my-studio-monitors"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "open-versus-closed-headphones-for-recording",
+    "category": "Sound & equipment",
+    "title": "Open-back and closed-back headphones serve different studio jobs",
+    "description": "Isolation, comfort, leakage and spatial presentation should drive the choice.",
+    "summary": "Isolation, comfort, leakage and spatial presentation should drive the choice.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "Closed-back headphones reduce the amount of playback escaping from the earcups, which can be useful while recording a nearby microphone. Open-back designs allow more air and sound to pass through and may feel less enclosed to some listeners. Neither construction guarantees a neutral frequency response; tuning differs between individual models."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "Leakage is important when a singer is performing a quiet passage: a loud click track from the headphones can bleed into the recorded vocal. During mixing, isolation is less critical, and a comfortable headphone that helps reveal balances may be preferable. Long listening sessions also make fit and fatigue practical concerns."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "While monitoring at a sensible volume, put on headphones with a metronome or percussion loop running and record the sound escaping into a nearby microphone. Repeat with a different headphone design if available. Then compare both for bass, vocal balance and comfort during a full song."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "A listener should not assume that open-back always means accurate or closed-back always means inferior. Try the specific model and cross-check important decisions on another playback system."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Genelec monitoring and acoustics reference",
+        "url": "https://www.genelec.com/how-to-build-a-home-studio"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "sample-rate-versus-bit-depth",
+    "category": "Sound & equipment",
+    "title": "Sample rate and bit depth solve different recording problems",
+    "description": "One describes time sampling; the other describes numerical resolution.",
+    "summary": "One describes time sampling; the other describes numerical resolution.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "An audio interface converts a changing analogue waveform into digital numbers. Sample rate determines how many measurements are taken per second; bit depth determines the precision with which sample amplitude can be represented in fixed-point recording. They are not competing ways to describe 'quality', and higher values have practical costs in storage and processing."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "Sample rate also relates to the highest frequencies a system can represent, subject to filtering and converter design. Bit depth relates to available dynamic range and the treatment of very quiet signals. When tracking with modern 24-bit converters, leaving sensible headroom generally matters more than pushing peaks near zero."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Record a short acoustic passage in a standard, supported format such as 24-bit 48 kHz, then export carefully to another appropriate delivery format. Match playback levels and compare. Look at file size and workflow compatibility rather than deciding from a number printed on a menu."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "Changing the sample rate of an already limited source does not recreate frequencies that were never captured. A higher setting is useful when a particular production or processing requirement calls for it, not automatically because the number is larger."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Ableton audio manual",
+        "url": "https://www.ableton.com/en/manual/recording-new-clips/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "audio-interface-why-it-matters",
+    "category": "Sound & equipment",
+    "title": "What an audio interface actually contributes to a recording",
+    "description": "Preamplification, conversion, monitoring and stable connections matter more than feature counts.",
+    "summary": "Preamplification, conversion, monitoring and stable connections matter more than feature counts.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "An audio interface is the bridge between microphones, instruments, headphones, speakers and the computer. Its microphone preamps raise small signals to usable levels; converters translate audio between analogue and digital domains. Monitoring hardware and drivers also influence the practical experience of making music, particularly the delay and reliability of playback."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "A producer recording one voice and guitar may not need sixteen inputs. A group recording simultaneously needs more. Clean gain, dependable drivers, headphone outputs, useful metering and a suitable monitoring path can matter more than advertised maximum sample rates."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Map a typical session before choosing hardware: how many microphones are live at once, how many separate headphone mixes are needed, and must instruments be recorded independently? Compare those needs with the interface's actual physical inputs, preamps and outputs. Distinguish a line input from a microphone preamp."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "Do not treat the interface as the magic ingredient behind a good song. Placement, performance, room sound and engineering judgement often produce bigger audible differences than replacing a functioning interface with a more expensive one."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Ableton audio manual",
+        "url": "https://www.ableton.com/en/manual/recording-new-clips/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "buffer-size-and-recording-latency",
+    "category": "Sound & equipment",
+    "title": "Why audio buffer size changes recording responsiveness",
+    "description": "A larger processing buffer gives software more time but often increases monitoring delay.",
+    "summary": "A larger processing buffer gives software more time but often increases monitoring delay.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "Digital audio software processes sound in blocks called buffers. A smaller buffer generally reduces the time between an incoming performance and its return through the software, but leaves less time for plug-ins and instruments to complete their work. A larger buffer improves processing tolerance at the cost of a less immediate monitoring response."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "This trade-off matters differently during overdubbing and mixing. A singer needs responsive monitoring; a complex mix with dozens of demanding processors benefits from stability. Direct monitoring through an interface can bypass some of the software delay."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "With a compatible interface, record a simple repeated phrase using a small buffer, then a larger one. Note delay or clicks and crackles, keeping audio settings otherwise unchanged. When mixing, increase buffer size and observe whether the project becomes more stable under plug-in load."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "The delay associated with buffers is not the only source of latency; plug-ins, interfaces and drivers also contribute. No single sample setting is universally right, and changing settings mid-session should follow the particular hardware's guidance."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Ableton audio manual",
+        "url": "https://help.ableton.com/hc/en-us/articles/360010545559-How-Latency-Works"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "equalization-or-turn-down-the-instrument",
+    "category": "Sound & equipment",
+    "title": "Should you use EQ or simply turn an instrument down?",
+    "description": "Frequency balance and overall level are different mixing problems.",
+    "summary": "Frequency balance and overall level are different mixing problems.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "If a guitar overwhelms a vocal, the first question is whether it is too loud overall or too prominent in a particular frequency region. Lowering the fader changes the entire signal, while an equaliser can reduce or boost a selected band. Using EQ without first balancing the track can turn a straightforward level decision into unnecessary complexity."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "Two instruments can occupy overlapping spectral ranges and still coexist when their rhythms and dynamics are arranged thoughtfully. A bass guitar and kick drum may benefit from distinct roles at different moments, while a bright acoustic guitar can compete with the intelligibility of a voice."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Loop a chorus and lower the competing instrument by two or three decibels. Then restore its original level and try a modest cut in the frequency range where it masks the vocal. Compare at matched perceived loudness. Which choice keeps the instrument's character and helps the lyric?"
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "Equalisation is powerful, but it should support an arrangement. Sometimes the real solution is fewer notes, a different voicing or a pause that lets the singer be heard."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Ableton audio manual",
+        "url": "https://www.ableton.com/en/manual/mixing/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "reverb-as-an-imagined-space",
+    "category": "Sound & equipment",
+    "title": "Reverb creates a sense of space, not just a longer sound",
+    "description": "Early reflections, decay and wet/dry balance alter how close or distant a singer appears.",
+    "summary": "Early reflections, decay and wet/dry balance alter how close or distant a singer appears.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "Reverberation consists of many reflections arriving after a sound. A short, bright room can suggest intimacy, while a longer decay can make a voice seem placed in a much larger space. Reverb therefore acts like an imagined architecture around a recording, even when the original vocal was captured in a small dry booth."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "Too much reverb can hide consonants and blur rhythmic detail. A pre-delay separates the dry vocal from the beginning of the reverberant field and may preserve clarity. Sending multiple instruments into a shared reverb can also create the impression that they occupy the same acoustic world."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Take a dry vocal phrase and audition a small-room setting, a longer hall and no reverb. Match levels and ask how near the singer appears. Then shorten the decay and increase pre-delay separately to learn which parameter changes clarity and which changes the apparent room."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "A long tail is not automatically more emotional. The right space may be nearly invisible until the singer stops. Select reverb for the song's perspective rather than the impressiveness of the effect in solo."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Ableton audio manual",
+        "url": "https://www.ableton.com/en/manual/mixing/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "mono-compatibility-and-stereo-width",
+    "category": "Sound & equipment",
+    "title": "Why a wide stereo mix should still make sense in mono",
+    "description": "Some stereo techniques become weaker when left and right channels are combined.",
+    "summary": "Some stereo techniques become weaker when left and right channels are combined.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "Stereo width can come from different performances, panning, room microphones or phase-related processing. When channels are combined to mono, signals that differ in phase may reinforce or partially cancel one another. An instrument that sounds huge in headphones can therefore shrink unexpectedly on a single-speaker playback system."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "Checking mono compatibility is not a demand that every mix sound identical in both formats. Stereo is part of the art. The purpose of the check is to discover whether important musical information, such as the lead vocal or core rhythm, disappears when the playback situation changes."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Take a stereo mix with wide backing voices or guitars. Switch between stereo and mono at matched listening level. Note changes in bass, snare weight, vocal presence and any chorus effect. If an important part vanishes, inspect the processing or microphone timing used to create its width."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "Judging stereo by exaggerated width alone can be misleading. A stable centre and clear relationships between parts may make a recording feel larger than a permanently extreme left-right spread."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Ableton audio manual",
+        "url": "https://www.ableton.com/en/manual/mixing/"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  },
+  {
+    "slug": "why-good-headphones-reveal-production-details",
+    "category": "Sound & equipment",
+    "title": "Why a better listening setup reveals details in familiar music",
+    "description": "Resolution and frequency balance matter, but attention and room acoustics matter just as much.",
+    "summary": "Resolution and frequency balance matter, but attention and room acoustics matter just as much.",
+    "source": "AI-assisted audio technology research",
+    "sections": [
+      {
+        "heading": "Understand the principle",
+        "paragraphs": [
+          "A different headphone or loudspeaker can make quiet parts of a familiar recording easier to hear. Bass extension, transient reproduction and distortion performance differ between products. But a changed frequency balance can also make an instrument sound more prominent without necessarily revealing new information. What listeners perceive as 'detail' can therefore have several causes."
+        ]
+      },
+      {
+        "heading": "Why a listener notices",
+        "paragraphs": [
+          "The listening environment completes the chain. Room modes can exaggerate or suppress bass from even excellent monitors. Headphones avoid many room effects but have their own fit and tonal characteristics. Neither price nor a specification sheet can tell you whether a particular system suits your hearing and room."
+        ]
+      },
+      {
+        "heading": "A practical test",
+        "paragraphs": [
+          "Choose a recording you know deeply and make a list of three things to follow: a quiet backing voice, a bass transition and a percussion accent. Listen on two different systems at a safe, matched level. Record what each system makes easier or harder to distinguish."
+        ]
+      },
+      {
+        "heading": "Choose by listening",
+        "paragraphs": [
+          "This is connected to a WORLD POP theme: remarkable recordings sometimes inspire people to value better playback equipment. The strongest equipment demonstration is an audible musical discovery, not a claim that one product makes every song better."
+        ]
+      }
+    ],
+    "references": [
+      {
+        "title": "Genelec monitoring and acoustics reference",
+        "url": "https://www.genelec.com/how-to-build-a-home-studio"
+      }
+    ],
+    "links": [
+      {
+        "label": "Explore Sound Works",
+        "url": "/sound/"
+      },
+      {
+        "label": "Hear WORLD POP",
+        "url": "/radio-show/"
+      }
+    ]
+  }
+]
