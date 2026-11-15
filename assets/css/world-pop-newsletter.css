@@ -63,3 +63,20 @@
 .newsletter-share[hidden] { display:none; }
 .newsletter-share-status { color:var(--muted); font-size:12px; margin:8px 0 0; }
 .newsletter-share-status:empty { display:none; }
+
+.newsletter-milestone { padding:12px 6vw 24px; }
+.milestone-card { max-width:1400px; margin:auto; padding:30px; border:1px solid #e3b06d40; border-top:3px solid var(--gold); background:radial-gradient(ellipse at right top,#49321f66,transparent 65%),var(--night); display:grid; grid-template-columns:minmax(0,1.7fr) minmax(280px,1fr); gap:20px 36px; }
+.milestone-heading { grid-column:1 / -1; }
+.milestone-heading .eyebrow { margin:0 0 12px; }
+.radio-page main .milestone-heading h2 { font-size:clamp(27px,3vw,40px); line-height:1.15; margin:0; max-width:1000px; }
+.milestone-story p { font-size:14px; line-height:1.8; color:var(--muted); margin:0 0 14px; }
+.milestone-story .milestone-lead { color:var(--cream); font-size:16px; }
+.milestone-story .milestone-signoff { color:var(--gold); margin-bottom:0; }
+.milestone-schedule { align-self:start; padding:22px; background:#e3b06d0a; border:1px solid #e3b06d40; }
+.milestone-schedule h3 { margin:0 0 20px; font:400 24px var(--serif); }
+.milestone-zone { font-size:10px; text-transform:uppercase; letter-spacing:.1em; color:var(--gold); margin:0 0 6px; }
+.milestone-time { font-size:13px; line-height:1.8; margin:0 0 20px; }
+.milestone-time strong { font-size:22px; color:var(--cream); }
+.milestone-listen { font-size:10px; padding:12px 14px; text-align:center; line-height:1.6; }
+.milestone-station { font-size:11px; color:var(--muted); margin:10px 0 0; overflow-wrap:anywhere; }
+@media(max-width:760px) { .milestone-card { grid-template-columns:minmax(0,1fr); padding:20px; gap:20px; } .milestone-schedule { grid-row:2; padding:18px; } .newsletter-milestone { padding-top:0; } }
