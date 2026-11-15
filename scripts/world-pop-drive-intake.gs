@@ -85,7 +85,7 @@ function scanWorldPopEpisodes() {
 
 function episodeNumber_(name) {
   // Accept EP02, EP 02, episode_02, World pop Show 2; ignore unrelated files.
-  const m = String(name).match(/(?:\bEP(?:ISODE)?\s*[-_ ]*0*|\bSHOW\s*[-_ ]*0*)(\d{1,3})\b/i);
+  const m = String(name).match(/(?:^|[^a-z0-9])(?:EP(?:ISODE)?[\s_-]*0*|SHOW[\s_-]*0*)(\d{1,3})(?!\d)/i);
   return m ? 'EP' + String(Number(m[1])).padStart(2, '0') : '';
 }
 
