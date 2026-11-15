@@ -4,9 +4,9 @@ The knowledge library is part of the existing static HTML website. No WordPress,
 
 ## Publishing an article
 
-1. Add an editorially reviewed entry to `content/music-library.json` following the existing examples. Supply a unique lowercase hyphenated slug, title, description, category, summary, source context, links and substantial sections.
+1. Add a verified editorial entry to `content/music-library.json` or one of the five subject collections listed below, following the existing examples. Supply a unique lowercase hyphenated slug, title, description, category, summary, source context, links and substantial sections.
 2. Run `node scripts/build-music-library.cjs` from the repo root (requires Node 18+; no packages).
-3. Run `node scripts/build-music-library.cjs --check` to verify all generated files match the JSON source.
+3. Run `node scripts/build-music-library.cjs --check` to verify all 55 generated files (index + 53 articles + sitemap) match the JSON sources.
 4. Inspect links, facts, recordings, credits and browser layout, then commit the JSON **and** the generated HTML and sitemap in the same pull request.
 
 The builder generates /music-library/index.html, each /music-library/[slug]/index.html and the root sitemap.xml. All article bodies appear in the HTML returned to crawlers without requiring JavaScript.
@@ -33,3 +33,19 @@ This site is published from Git to Cloudflare as static HTML. The music library 
 ## First release
 
 The first three pieces are **editorial notebooks, not claimed transcripts**: crossing cultures, orchestral improvisation and recording 'flying hours'. WORLD POP Episode 01 is the only episode linked with a verified playable source in this starter release. Episode 02 materials may be incorporated when approved and published.
+
+## Research library expansion — November 2026
+
+The library now has **53 articles: three original editorial essays and 50 new AI-assisted research notes**. The five additional source files are:
+
+- `content/music-library-psychology.json` — 10 articles
+- `content/music-library-recording.json` — 10 articles
+- `content/music-library-songwriting.json` — 10 articles
+- `content/music-library-equipment.json` — 10 articles
+- `content/music-library-culture.json` — 10 articles
+
+Every new note identifies an external research or educational source, provides a topic-specific listening or recording exercise, and discloses that it is **AI-assisted editorial research rather than a firsthand Mahmood Khan account or a WORLD POP broadcast transcript**. The articles were researched and initially drafted with AI; the site owner can continue improving and verifying them. Avoid representing the initial drafts as peer-reviewed papers or personal statements by Mahmood.
+
+Run the generator on **any** system with Node 18+; it creates and checks the static files locally. No GitHub Actions, payment, or third-party build runner is required. The generated HTML is committed, so Cloudflare only needs to serve the static site. Source citations are deliberately embedded as real external links, not fabricated citation badges. External links and credits should be checked again when new factual material is added.
+
+For WORLD POP production, add permanent episode transcripts only once there is an accurate transcript and permission to publish it. Never turn planning notes for an upcoming episode into a purported broadcast transcript. Future song profiles should have verified personnel credits, the correct recording, and links to licensed playable material.

@@ -1,5 +1,5 @@
 'use strict';
-// Generate HTML pages from reviewed editorial material in content/music-library.json.
+// Generate crawlable HTML from the WORLD POP library and five sourced research collections.
 // Usage: node scripts/build-music-library.cjs [--check]
 const fs = require('node:fs');
 const path = require('node:path');
@@ -32,20 +32,33 @@ function bottom(){
 function renderIndex(d){
  const canonical="https://mahmoodkhan.net/music-library/";
  const schema={"@context":"https://schema.org","@type":"CollectionPage","name":d.title,"description":d.description,"url":canonical,"publisher":{"@type":"Person","name":"Mahmood Khan","url":"https://mahmoodkhan.net/"},"mainEntity":{"@type":"ItemList","itemListElement":d.entries.map((e,i)=>({"@type":"ListItem","position":i+1,"name":e.title,"url":urlFor(e.slug)}))}};
- const cards=d.entries.map((a,i)=>'<article class="library-card"><span class="eyebrow">'+h(a.category)+'</span><h2><a href="/music-library/'+h(a.slug)+'/">'+h(a.title)+'</a></h2><p>'+h(a.summary)+'</p><a class="library-link" href="/music-library/'+h(a.slug)+'/">Read article <span aria-hidden="true">→</span></a></article>').join("\n");
+
+ const order=['Music psychology','Recording & voice','Songwriting & arrangement','Sound & equipment','World music & culture','Music & culture','Composition & performance'], groups=new Map();
+ for(const name of order)groups.set(name,[]);
+ for(const e of d.entries){if(!groups.has(e.category))groups.set(e.category,[]);groups.get(e.category).push(e)}
+ const groupId=name=>name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+ const nav='<nav class="library-category-nav" aria-label="Explore by subject">'+[...groups].filter(([,items])=>items.length).map(([name,items])=>'<a href="#'+groupId(name)+'">'+h(name)+' <span>'+items.length+'</span></a>').join('')+'</nav>';
+ const cards=nav+[...groups].filter(([,items])=>items.length).map(([name,items])=>'<section class="library-category" id="'+groupId(name)+'"><div class="library-category-title"><p class="eyebrow">Explore the subject</p><h3>'+h(name)+'</h3><span>'+items.length+' articles</span></div><div class="library-grid">'+items.map(a=>'<article class="library-card"><span class="eyebrow">'+h(a.category)+'</span><h4><a href="/music-library/'+h(a.slug)+'/">'+h(a.title)+'</a></h4><p>'+h(a.summary)+'</p><a class="library-link" href="/music-library/'+h(a.slug)+'/">Read article <span aria-hidden="true">→</span></a></article>').join('')+'</div></section>').join('');
+
  return metaHead("Music Knowledge Library | Mahmood Khan",d.description,canonical,schema)+'<body class="library-page">'+topNav()+
  '<main id="main"><section class="library-hero"><p class="eyebrow">Mahmood Khan · WORLD POP</p><h1>Inside the <em>music</em></h1><p class="library-lead">The songs. The stories. The cultures they create.</p><p>Music, recording, culture and the human experiences behind the sound — explored through the work of songwriter and producer Mahmood Khan and his weekly programme WORLD POP.</p><div class="library-actions"><a class="button button-gold" href="#articles">Explore the library</a><a class="library-link" href="/radio-show/">Listen to WORLD POP →</a></div></section>'+
- '<section class="library-section" id="articles" aria-labelledby="library-articles-heading"><div class="library-section-head"><p class="eyebrow">The collection</p><h2 id="library-articles-heading">Ideas worth listening to.</h2><p>Original editorial notes connected to recordings, musical practice and lived experience. These are articles, not episode transcripts.</p></div><div class="library-grid">'+cards+'</div></section>'+
+ '<section class="library-section" id="articles" aria-labelledby="library-articles-heading"><div class="library-section-head"><p class="eyebrow">The collection</p><h2 id="library-articles-heading">Ideas worth listening to.</h2><p>Original editorial notes connected to recordings, musical practice and lived experience. These are articles, not episode transcripts. Research notes are prepared with AI assistance and link to supporting material.</p><p class="library-count">'+d.entries.length+' articles across music, recording, culture and creativity</p></div>'+cards+'</section>'+
  '<section class="library-listen" aria-labelledby="listen-heading"><div><p class="eyebrow">Hear the work</p><h2 id="listen-heading">WORLD POP — Episode 01</h2><p>Start with the music. Follow the stories. The first published episode is available here, with the full archive on the radio page.</p><p><a class="library-link" href="/radio-show/#episode-01">Visit the episode page →</a></p></div><div><audio controls preload="none" aria-label="Listen to WORLD POP Episode 01" src="'+h(d.listenUrl)+'"></audio><p class="library-small">Listener edition · WORLD POP with Mahmood Khan</p></div></section></main>'+bottom();
 }
 function renderArticle(d,a){
  const canonical=urlFor(a.slug), title=a.title+" | Mahmood Khan Music Library";
  const schema={"@context":"https://schema.org","@type":"Article","headline":a.title,"description":a.description,"url":canonical,"mainEntityOfPage":canonical,"dateCreated":d.updated,"author":{"@type":"Organization","name":"WORLD POP editorial library","url":"https://mahmoodkhan.net/radio-show/"},"publisher":{"@type":"Person","name":"Mahmood Khan","url":"https://mahmoodkhan.net/"},"isPartOf":{"@type":"CollectionPage","name":d.title,"url":"https://mahmoodkhan.net/music-library/"},"about":[{"@type":"Thing","name":a.category},{"@type":"Person","name":"Mahmood Khan"}]};
+ if(Array.isArray(a.references)&&a.references.length)schema.citation=a.references.map(r=>r.url);
  const sections=a.sections.map(s=>'<section class="library-prose-section"><h2>'+h(s.heading)+'</h2>'+s.paragraphs.map(p=>'<p>'+h(p)+'</p>').join("")+'</section>').join("\n");
  const refs=a.links.map(r=>'<a class="library-link" href="'+h(r.url)+'">'+h(r.label)+' <span aria-hidden="true">→</span></a>').join("");
- const further=d.entries.filter(e=>e.slug!==a.slug).slice(0,2).map(e=>'<li><a href="/music-library/'+h(e.slug)+'/">'+h(e.title)+'</a></li>').join("");
+
+ const same=d.entries.filter(e=>e.slug!==a.slug&&e.category===a.category);
+ const further=(same.length?same:d.entries.filter(e=>e.slug!==a.slug)).slice(0,3).map(e=>'<li><a href="/music-library/'+h(e.slug)+'/">'+h(e.title)+'</a></li>').join('');
+ const sourceBlock=Array.isArray(a.references)&&a.references.length?'<section class="library-sources" aria-label="Sources and further reading"><h2>Sources and further reading</h2><p>These references support the research overview. The listening exercises and commentary are editorial interpretations, not conclusions attributed to the sources.</p><ul>'+a.references.map(r=>'<li><a href="'+h(r.url)+'" target="_blank" rel="noopener noreferrer">'+h(r.title)+' ↗</a></li>').join('')+'</ul></section>':'';
+ const disclosure=Array.isArray(a.references)&&a.references.length?'<p class="library-research-note">AI-assisted research note · Sources linked below · Not a broadcast transcript or a first-person account by Mahmood Khan</p>':'';
+
  return metaHead(title,a.description,canonical,schema)+'<body class="library-page">'+topNav()+
- '<main id="main"><article class="library-article"><header class="library-article-header"><p class="eyebrow">'+h(a.category)+' · '+h(a.source)+'</p><p class="library-back"><a href="/music-library/">← All articles</a></p><h1>'+h(a.title)+'</h1><p class="library-deck">'+h(a.summary)+'</p><p class="library-small">WORLD POP music knowledge library · November 2026</p></header><div class="library-article-layout"><div class="library-article-body">'+sections+'<section class="library-next"><h2>Hear more of the story</h2><p>This article is one part of Mahmood Khan’s wider musical work. Explore the recordings, performances and ongoing WORLD POP conversations connected to these ideas.</p><div class="library-next-links">'+refs+'</div></section></div><aside class="library-aside" aria-label="Explore more"><div class="library-aside-inner"><p class="eyebrow">WORLD POP</p><h2>The songs, the stories.</h2><p>Hosted by Mahmood Khan. Listen to the first episode or explore the developing collection.</p><a class="library-link" href="/radio-show/#episode-01">Listen to Episode 01 →</a><hr><p class="eyebrow">Continue reading</p><ul>'+further+'</ul></div></aside></div></article></main>'+bottom();
+ '<main id="main"><article class="library-article"><header class="library-article-header"><p class="eyebrow">'+h(a.category)+' · '+h(a.source)+'</p><p class="library-back"><a href="/music-library/">← All articles</a></p><h1>'+h(a.title)+'</h1><p class="library-deck">'+h(a.summary)+'</p><p class="library-small">WORLD POP music knowledge library · November 2026</p>'+disclosure+'</header><div class="library-article-layout"><div class="library-article-body">'+sections+'<section class="library-next"><h2>Hear more of the story</h2><p>This article is one part of Mahmood Khan’s wider musical work. Explore the recordings, performances and ongoing WORLD POP conversations connected to these ideas.</p><div class="library-next-links">'+refs+'</div></section>'+sourceBlock+'</div><aside class="library-aside" aria-label="Explore more"><div class="library-aside-inner"><p class="eyebrow">WORLD POP</p><h2>The songs, the stories.</h2><p>Hosted by Mahmood Khan. Listen to the first episode or explore the developing collection.</p><a class="library-link" href="/radio-show/#episode-01">Listen to Episode 01 →</a><hr><p class="eyebrow">Continue reading</p><ul>'+further+'</ul></div></aside></div></article></main>'+bottom();
 }
 function sitemap(urls){
  const unique=[...new Set(urls)].sort();
@@ -73,12 +86,21 @@ const coreUrls = [
 ];
 function build() {
  const data = JSON.parse(fs.readFileSync(path.join(ROOT,'content/music-library.json'),'utf8'));
+ for(const topic of ['psychology','recording','songwriting','equipment','culture']){
+  const file=path.join(ROOT,'content/music-library-'+topic+'.json');
+  if(!fs.existsSync(file))throw new Error('Missing research collection: '+file);
+  const batch=JSON.parse(fs.readFileSync(file,'utf8'));
+  if(!Array.isArray(batch)||batch.length!==10)throw new Error('Expected ten articles: '+file);
+  data.entries.push(...batch);
+ }
  const known = new Set();
  if (!Array.isArray(data.entries) || !data.entries.length) throw new Error('No library entries');
  for (const a of data.entries) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(a.slug) || known.has(a.slug)) throw new Error('Invalid or duplicate slug: '+a.slug);
   known.add(a.slug);
   if (!a.title || !a.description || !Array.isArray(a.sections) || a.sections.length < 2 || !a.sections.every(s=>s.heading && Array.isArray(s.paragraphs) && s.paragraphs.length)) throw new Error('Incomplete editorial entry: '+a.slug);
+  if(a.references && (!Array.isArray(a.references)||!a.references.length||!a.references.every(r=>r.title&&/^https:\/\//.test(r.url))))throw new Error('Incomplete references: '+a.slug);
+  if(a.references && a.sections.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length<160)throw new Error('Research note too short: '+a.slug);
  }
  const outputs = new Map();
  outputs.set('music-library/index.html',renderIndex(data));
