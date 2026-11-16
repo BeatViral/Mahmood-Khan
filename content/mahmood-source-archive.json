@@ -262,6 +262,21 @@
         "Engineering",
         "Interview"
       ]
+    },
+    {
+      "id": "world-pop-episode-02",
+      "title": "WORLD POP with Mahmood Khan — Episode 02",
+      "type": "Original radio episode",
+      "publisher": "Mahmood Khan / WORLD POP",
+      "date": "2026-11-16",
+      "url": "https://mahmoodkhan.net/radio-show/share/episode-02/",
+      "status": "Original listener audio release and two Google Drive MP3s verified; finished audio has not yet been transcribed for research articles",
+      "summary": "Episode 02 of WORLD POP. Broadcaster and website files were uploaded to Google Drive on 16 November 2026; listener audio is also available through the official GitHub release and episode page. Episode-specific article research awaits a verified transcript.",
+      "topics": [
+        "WORLD POP",
+        "Original audio",
+        "Broadcasting"
+      ]
     }
   ]
 }
