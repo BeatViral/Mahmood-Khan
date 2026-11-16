@@ -22,7 +22,7 @@ for episode in data["episodes"]:
 page = root / "radio-show/index.html"
 before, rest = page.read_text(encoding="utf-8").split("<!-- EPISODES START -->")
 _, after = rest.split("<!-- EPISODES END -->")
-page.write_bytes(("\n".join([before + "<!-- EPISODES START -->", *cards, "<!-- EPISODES END -->" + after])).encode())
+page.write_bytes(("\n".join([before + "<!-- EPISODES START -->", *reversed(cards), "<!-- EPISODES END -->" + after])).encode())
 
 template = page.read_text(encoding="utf-8")
 for episode, card in zip(data["episodes"], cards):
@@ -56,7 +56,7 @@ newsletter = root / "radio-show/newsletter/index.html"
 newsletter_text = newsletter.read_text(encoding="utf-8")
 newsletter_text = re.sub(
     r"<!-- NEWSLETTER PLAYER START -->.*?<!-- NEWSLETTER PLAYER END -->",
-    lambda _: "<!-- NEWSLETTER PLAYER START -->\n" + cards[-1] + "\n<!-- NEWSLETTER PLAYER END -->",
+    lambda _: "<!-- NEWSLETTER PLAYER START -->\n" + "\n".join(reversed(cards)) + "\n<!-- NEWSLETTER PLAYER END -->",
     newsletter_text,
     flags=re.S,
 )

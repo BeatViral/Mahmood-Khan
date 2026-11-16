@@ -31,6 +31,24 @@
         "integratedLoudnessLUFS": -23
       },
       "image": "/assets/world-pop-poster.jpg"
+    },
+    {
+      "id": "episode-02",
+      "episodeNumber": 2,
+      "title": "Episode 02",
+      "displayHeading": "Episode 02",
+      "subtitle": "The songs. The stories. The cultures they create.",
+      "listenerEdition": {
+        "label": "Listen",
+        "streamUrl": "https://github.com/BeatViral/Mahmood-Khan/releases/download/world-pop-episode-02/world-pop-episode-02-listener.mp3",
+        "url": "https://drive.google.com/file/d/1l__iHsYhWC0nDzI1JzYKYwfWPJoIYd7X/view"
+      },
+      "broadcasterEdition": {
+        "label": "Broadcaster file",
+        "url": "https://drive.google.com/file/d/1YJN3t-fPF43n7aZSNhp215G7lOm6Jwqo/view",
+        "format": "MP3"
+      },
+      "image": "/assets/world-pop-poster.jpg"
     }
   ]
 }
