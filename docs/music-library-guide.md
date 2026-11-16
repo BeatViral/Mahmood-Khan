@@ -64,3 +64,12 @@ A November 17, 2011 MKF post attributes the documentary **Journey of a New Sound
 ### Google Drive ingestion
 
 An **optional, non-deployed** Google Apps Script is available at `scripts/world-pop-drive-intake.gs` with setup guide `docs/world-pop-drive-intake.md`. If authorised by the Drive owner, it checks the existing WORLD POP Google Drive folder hourly and records MP3/audio and related transcript files in a **private Google Sheet**. This is only an intake queue. It **does not** transcribe, write articles or publish. A separate transcription/research service and verified approval workflow are required for end-to-end automation. No GitHub Actions fees or PAT are needed for this intake queue.
+
+
+## WORLD POP Episode 02 companion articles (16 November 2026)
+
+Source: user-authored **Episode 2 Production Plan** chat dated 10–11 November 2026. Exact working-script passages were recovered for the moving-floor and inherited-vinyl story, songwriter links, Arthur's Theme / Ernie Watts, and Karen's microphone-hours question. The final uploaded audio was verified as an MP3 but was **not available for transcription and line-by-line checking** through the connected services.
+
+Four research essays are stored in `content/music-library-episode-02.json`, then generated as public static HTML. Each essay labels the production script as source and distinguishes it from externally verified recordings credits; none pretends to be a verbatim transcript. References include Library of Congress, American Film Institute, official Rhino/Warner soundtrack credits, MusicBrainz and NATS/Red Bull interviews. Episode links point to `/radio-show/share/episode-02/`.
+
+The script corpus is not a public verbatim script file. If an accurate final transcript is later available, reconcile the four essays with the recording and correct any track order, spoken claims and on-air phrasing differences. Future script-led content should carry the same provenance label and go through claim verification before publishing.

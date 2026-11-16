@@ -33,7 +33,7 @@ function renderIndex(d){
  const canonical="https://mahmoodkhan.net/music-library/";
  const schema={"@context":"https://schema.org","@type":"CollectionPage","name":d.title,"description":d.description,"url":canonical,"publisher":{"@type":"Person","name":"Mahmood Khan","url":"https://mahmoodkhan.net/"},"mainEntity":{"@type":"ItemList","itemListElement":d.entries.map((e,i)=>({"@type":"ListItem","position":i+1,"name":e.title,"url":urlFor(e.slug)}))}};
 
- const order=['Firsthand journeys & interviews','Music psychology','Recording & voice','Songwriting & arrangement','Sound & equipment','World music & culture','Music & culture','Composition & performance'], groups=new Map();
+ const order=['WORLD POP Episode 02 explorations','Firsthand journeys & interviews','Music psychology','Recording & voice','Songwriting & arrangement','Sound & equipment','World music & culture','Music & culture','Composition & performance'], groups=new Map();
  for(const name of order)groups.set(name,[]);
  for(const e of d.entries){if(!groups.has(e.category))groups.set(e.category,[]);groups.get(e.category).push(e)}
  const groupId=name=>name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -111,6 +111,10 @@ function build() {
  const firsthand=JSON.parse(fs.readFileSync(firsthandFile,'utf8'));
  if(!Array.isArray(firsthand)||firsthand.length!==7)throw new Error('Expected seven firsthand chapters');
  data.entries.push(...firsthand);
+ const episode02File=path.join(ROOT,'content/music-library-episode-02.json');
+ const episode02=JSON.parse(fs.readFileSync(episode02File,'utf8'));
+ if(!Array.isArray(episode02)||episode02.length!==4)throw new Error('Expected four episode 02 companion articles');
+ data.entries.push(...episode02);
  const archive=JSON.parse(fs.readFileSync(path.join(ROOT,'content/mahmood-source-archive.json'),'utf8'));
  if(!Array.isArray(archive.sources)||archive.sources.length<10)throw new Error('Missing source archive');
  const known = new Set();
