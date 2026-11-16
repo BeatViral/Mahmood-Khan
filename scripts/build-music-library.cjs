@@ -113,7 +113,7 @@ function build() {
  data.entries.push(...firsthand);
  const episode02File=path.join(ROOT,'content/music-library-episode-02.json');
  const episode02=JSON.parse(fs.readFileSync(episode02File,'utf8'));
- if(!Array.isArray(episode02)||episode02.length!==4)throw new Error('Expected four episode 02 companion articles');
+ if(!Array.isArray(episode02)||episode02.length!==12)throw new Error('Expected twelve episode 02 companion articles');
  data.entries.push(...episode02);
  const archive=JSON.parse(fs.readFileSync(path.join(ROOT,'content/mahmood-source-archive.json'),'utf8'));
  if(!Array.isArray(archive.sources)||archive.sources.length<10)throw new Error('Missing source archive');
