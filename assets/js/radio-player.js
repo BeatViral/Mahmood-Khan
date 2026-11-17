@@ -30,18 +30,41 @@ for (const card of document.querySelectorAll('.episode')) {
     });
   }
   button.hidden = false;
+  const streamUrl = audio.getAttribute('src');
+  let failed = false;
+  function showFailure(message) {
+    failed = true;
+    audio.pause();
+    button.textContent = 'Listen';
+    status.textContent = message;
+  }
   button.onclick = async () => {
-    if (!audio.paused) { audio.pause(); return; }
-    status.textContent = '';
-    if (audio.error) audio.load();
+    // A failed media element can still report paused=false. Handle retry first.
+    if (failed || audio.error) {
+      failed = false;
+      const retryUrl = new URL(streamUrl, location.href);
+      retryUrl.searchParams.set('retry', Date.now().toString());
+      audio.src = retryUrl.href;
+      audio.load();
+    } else if (!audio.paused) {
+      audio.pause();
+      return;
+    }
+    status.textContent = 'Loading audio…';
     try { await audio.play(); }
-    catch { status.textContent = 'Audio could not start. Press Listen to retry.'; }
+    catch (error) {
+      if (error.name === 'AbortError' && !failed) return;
+      showFailure('Audio could not start. Press Listen to retry.');
+    }
   };
   audio.onplay = () => {
     for (const other of document.querySelectorAll('.episode audio')) if (other !== audio) other.pause();
+  };
+  audio.onplaying = () => {
+    failed = false;
     button.textContent = 'Pause';
     status.textContent = '';
   };
   audio.onpause = audio.onended = () => { button.textContent = 'Listen'; };
-  audio.onerror = () => { status.textContent = 'Audio could not load. Press Listen to retry.'; };
+  audio.onerror = () => { showFailure('Audio could not load. Press Listen to retry.'); };
 }

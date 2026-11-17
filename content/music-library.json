@@ -3,7 +3,7 @@
   "description": "Original notes on music, culture, songwriting, recording and the human experience from the world of WORLD POP with Mahmood Khan.",
   "updated": "2026-11-15",
   "episodesUrl": "/radio-show/",
-  "listenUrl": "https://github.com/BeatViral/Mahmood-Khan/releases/download/world-pop-episode-01/world-pop-episode-01-listener.mp3",
+  "listenUrl": "/assets/audio/world-pop-episode-01-web.mp3",
   "entries": [
     {
       "slug": "why-songs-cross-borders",
